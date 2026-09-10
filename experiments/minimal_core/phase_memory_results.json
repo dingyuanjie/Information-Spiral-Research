@@ -1,0 +1,469 @@
+{
+  "experiment": "phase-memory-enumeration-v1",
+  "method": "Exact enumeration; only logarithms use floating-point arithmetic.",
+  "scope": {
+    "input_histories": 16,
+    "input_distribution": "four independent fair bits",
+    "initial_state": 0,
+    "target": "XOR of the two observations marked relevant",
+    "alternating_roles": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "model_class": "deterministic finite-state transducers",
+    "decoder": "optimal terminal decoder for each candidate",
+    "not_tested": [
+      "stochastic transducers",
+      "training efficiency",
+      "monotone state drift",
+      "IST implementation"
+    ]
+  },
+  "phase_blind_one_bit": {
+    "rules_enumerated": 16,
+    "maximum_information_bits": 0.06550784501721568,
+    "maximum_accuracy": 0.5625,
+    "information_maximizer_count": 2,
+    "example_information_maximizer": {
+      "rule": 13,
+      "joint_counts": [
+        [
+          1,
+          0
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "mutual_information_bits": 0.06550784501721568,
+      "optimal_terminal_accuracy": 0.5625,
+      "correct_histories": 9,
+      "total_histories": 16
+    }
+  },
+  "periodic_one_bit_plus_clock": {
+    "rules_enumerated": 256,
+    "maximum_information_bits": 1.0,
+    "maximum_accuracy": 1.0,
+    "information_maximizer_count": 4,
+    "example_information_maximizer": {
+      "rules": [
+        6,
+        3
+      ],
+      "mutual_information_bits": 1.0,
+      "optimal_terminal_accuracy": 1.0,
+      "correct_histories": 16,
+      "total_histories": 16
+    }
+  },
+  "ordinary_four_state": {
+    "rules_enumerated": 65536,
+    "maximum_information_bits": 1.0,
+    "maximum_accuracy": 1.0,
+    "information_maximizer_count": 84,
+    "example_information_maximizer": {
+      "rule": 423,
+      "mutual_information_bits": 1.0,
+      "optimal_terminal_accuracy": 1.0,
+      "correct_histories": 16,
+      "total_histories": 16
+    }
+  },
+  "explicit_compilation": {
+    "encoding": "state = 2 * phase + memory",
+    "transition_table": [
+      2,
+      3,
+      3,
+      2,
+      0,
+      0,
+      1,
+      1
+    ],
+    "full_trajectory_equivalence_verified": true,
+    "mutual_information_bits": 1.0,
+    "optimal_terminal_accuracy": 1.0,
+    "correct_histories": 16,
+    "total_histories": 16
+  },
+  "ordinary_one_bit_with_role_input": [
+    {
+      "roles": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "mutual_information_bits": 1.0,
+      "optimal_terminal_accuracy": 1.0,
+      "correct_histories": 16,
+      "total_histories": 16
+    },
+    {
+      "roles": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "mutual_information_bits": 1.0,
+      "optimal_terminal_accuracy": 1.0,
+      "correct_histories": 16,
+      "total_histories": 16
+    },
+    {
+      "roles": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "mutual_information_bits": 1.0,
+      "optimal_terminal_accuracy": 1.0,
+      "correct_histories": 16,
+      "total_histories": 16
+    },
+    {
+      "roles": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "mutual_information_bits": 1.0,
+      "optimal_terminal_accuracy": 1.0,
+      "correct_histories": 16,
+      "total_histories": 16
+    },
+    {
+      "roles": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "mutual_information_bits": 1.0,
+      "optimal_terminal_accuracy": 1.0,
+      "correct_histories": 16,
+      "total_histories": 16
+    },
+    {
+      "roles": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "mutual_information_bits": 1.0,
+      "optimal_terminal_accuracy": 1.0,
+      "correct_histories": 16,
+      "total_histories": 16
+    }
+  ],
+  "information_over_time": [
+    {
+      "observations_processed": 0,
+      "first_bit_information_bits": 0.0,
+      "target_information_bits": 0.0
+    },
+    {
+      "observations_processed": 1,
+      "first_bit_information_bits": 1.0,
+      "target_information_bits": 0.0
+    },
+    {
+      "observations_processed": 2,
+      "first_bit_information_bits": 1.0,
+      "target_information_bits": 0.0
+    },
+    {
+      "observations_processed": 3,
+      "first_bit_information_bits": 0.0,
+      "target_information_bits": 1.0
+    },
+    {
+      "observations_processed": 4,
+      "first_bit_information_bits": 0.0,
+      "target_information_bits": 1.0
+    }
+  ],
+  "phase_blind_one_bit_all_rules": [
+    {
+      "rule": 0,
+      "joint_counts": [
+        [
+          8,
+          8
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "mutual_information_bits": 0.0,
+      "optimal_terminal_accuracy": 0.5,
+      "correct_histories": 8,
+      "total_histories": 16
+    },
+    {
+      "rule": 1,
+      "joint_counts": [
+        [
+          6,
+          5
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "mutual_information_bits": 0.013182168842508432,
+      "optimal_terminal_accuracy": 0.5625,
+      "correct_histories": 9,
+      "total_histories": 16
+    },
+    {
+      "rule": 2,
+      "joint_counts": [
+        [
+          6,
+          5
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "mutual_information_bits": 0.013182168842508432,
+      "optimal_terminal_accuracy": 0.5625,
+      "correct_histories": 9,
+      "total_histories": 16
+    },
+    {
+      "rule": 3,
+      "joint_counts": [
+        [
+          8,
+          8
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "mutual_information_bits": 0.0,
+      "optimal_terminal_accuracy": 0.5,
+      "correct_histories": 8,
+      "total_histories": 16
+    },
+    {
+      "rule": 4,
+      "joint_counts": [
+        [
+          8,
+          8
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "mutual_information_bits": 0.0,
+      "optimal_terminal_accuracy": 0.5,
+      "correct_histories": 8,
+      "total_histories": 16
+    },
+    {
+      "rule": 5,
+      "joint_counts": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "mutual_information_bits": 0.0,
+      "optimal_terminal_accuracy": 0.5,
+      "correct_histories": 8,
+      "total_histories": 16
+    },
+    {
+      "rule": 6,
+      "joint_counts": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "mutual_information_bits": 0.0,
+      "optimal_terminal_accuracy": 0.5,
+      "correct_histories": 8,
+      "total_histories": 16
+    },
+    {
+      "rule": 7,
+      "joint_counts": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "mutual_information_bits": 0.0,
+      "optimal_terminal_accuracy": 0.5,
+      "correct_histories": 8,
+      "total_histories": 16
+    },
+    {
+      "rule": 8,
+      "joint_counts": [
+        [
+          8,
+          8
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "mutual_information_bits": 0.0,
+      "optimal_terminal_accuracy": 0.5,
+      "correct_histories": 8,
+      "total_histories": 16
+    },
+    {
+      "rule": 9,
+      "joint_counts": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "mutual_information_bits": 0.0,
+      "optimal_terminal_accuracy": 0.5,
+      "correct_histories": 8,
+      "total_histories": 16
+    },
+    {
+      "rule": 10,
+      "joint_counts": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "mutual_information_bits": 0.0,
+      "optimal_terminal_accuracy": 0.5,
+      "correct_histories": 8,
+      "total_histories": 16
+    },
+    {
+      "rule": 11,
+      "joint_counts": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "mutual_information_bits": 0.0,
+      "optimal_terminal_accuracy": 0.5,
+      "correct_histories": 8,
+      "total_histories": 16
+    },
+    {
+      "rule": 12,
+      "joint_counts": [
+        [
+          8,
+          8
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "mutual_information_bits": 0.0,
+      "optimal_terminal_accuracy": 0.5,
+      "correct_histories": 8,
+      "total_histories": 16
+    },
+    {
+      "rule": 13,
+      "joint_counts": [
+        [
+          1,
+          0
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "mutual_information_bits": 0.06550784501721568,
+      "optimal_terminal_accuracy": 0.5625,
+      "correct_histories": 9,
+      "total_histories": 16
+    },
+    {
+      "rule": 14,
+      "joint_counts": [
+        [
+          1,
+          0
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "mutual_information_bits": 0.06550784501721568,
+      "optimal_terminal_accuracy": 0.5625,
+      "correct_histories": 9,
+      "total_histories": 16
+    },
+    {
+      "rule": 15,
+      "joint_counts": [
+        [
+          0,
+          0
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "mutual_information_bits": 0.0,
+      "optimal_terminal_accuracy": 0.5,
+      "correct_histories": 8,
+      "total_histories": 16
+    }
+  ]
+}

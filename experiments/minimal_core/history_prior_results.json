@@ -1,0 +1,4070 @@
+{
+  "experiment": "history-prior-enumeration-v1",
+  "protocol": {
+    "known_task_family": [
+      "u0 XOR u2",
+      "u0 XOR u1 XOR u2 XOR u3"
+    ],
+    "unknown": "population frequency epsilon and each task identity",
+    "historical_observation": "one independent uniform four-bit input and its label per independent historical task",
+    "diagnostic_probability": "1/2",
+    "hyperprior": "epsilon ~ Beta(1,1)",
+    "posterior": "epsilon | history ~ Beta(1+b,1+a)",
+    "new_task_prior_B": "(1+b)/(2+a+b)",
+    "decision": "posterior majority over task type; fair ties; a diagnostic new-task example identifies its type exactly",
+    "evaluation": "new-task calibration inputs uniformly chosen without replacement; evaluate only remaining inputs; exact expectation over disjoint historical tasks",
+    "meta_memory": "two integer counts a,b; this is additional historical state, not a fixed one-bit architecture comparison"
+  },
+  "stable_population": [
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/20",
+        "value": 0.05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "17/100",
+        "value": 0.17
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/20",
+        "value": 0.05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "34/375",
+        "value": 0.09066666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "17/375",
+        "value": 0.04533333333333334
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "17/1950",
+        "value": 0.008717948717948718
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "17/643500",
+        "value": 2.6418026418026417e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "13/100",
+        "value": 0.13
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/20",
+        "value": 0.05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "26/375",
+        "value": 0.06933333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "13/375",
+        "value": 0.034666666666666665
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "1/150",
+        "value": 0.006666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "1/49500",
+        "value": 2.0202020202020203e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "91/1000",
+        "value": 0.091
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/20",
+        "value": 0.05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "91/1875",
+        "value": 0.04853333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "91/3750",
+        "value": 0.024266666666666666
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "7/1500",
+        "value": 0.004666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "7/495000",
+        "value": 1.4141414141414141e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "5046449/80000000",
+        "value": 0.0630806125
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/20",
+        "value": 0.05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "5046449/150000000",
+        "value": 0.033642993333333336
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "5046449/300000000",
+        "value": 0.016821496666666668
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "5046449/1560000000",
+        "value": 0.003234903205128205
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "5046449/514800000000",
+        "value": 9.802736985236985e-06
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "264506898973027733/5120000000000000000",
+        "value": 0.05166150370566948
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/20",
+        "value": 0.05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "264506898973027733/9600000000000000000",
+        "value": 0.027552801976357056
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "264506898973027733/19200000000000000000",
+        "value": 0.013776400988178528
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "264506898973027733/99840000000000000000",
+        "value": 0.0026493078823420246
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "24046081724820703/2995200000000000000000",
+        "value": 8.028205704066741e-06
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "16788806467260931025012116275314636177/335544320000000000000000000000000000000",
+        "value": 0.05003454228419343
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/20",
+        "value": 0.05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "16788806467260931025012116275314636177/629145600000000000000000000000000000000",
+        "value": 0.026685089218236497
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "16788806467260931025012116275314636177/1258291200000000000000000000000000000000",
+        "value": 0.013342544609118248
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "16788806467260931025012116275314636177/6543114240000000000000000000000000000000",
+        "value": 0.0025658739632919707
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "16788806467260931025012116275314636177/2159227699200000000000000000000000000000000",
+        "value": 7.775375646339305e-06
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "3602881132502462319810103466934406472710447485932956163849045930842547909396497/72057594037927936000000000000000000000000000000000000000000000000000000000000000",
+        "value": 0.050000019853647416
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/20",
+        "value": 0.05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "3602881132502462319810103466934406472710447485932956163849045930842547909396497/135107988821114880000000000000000000000000000000000000000000000000000000000000000",
+        "value": 0.02666667725527862
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "3602881132502462319810103466934406472710447485932956163849045930842547909396497/270215977642229760000000000000000000000000000000000000000000000000000000000000000",
+        "value": 0.01333333862763931
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "277144702500189409216161805148800497900803652764073551065311225449426762261269/108086391056891904000000000000000000000000000000000000000000000000000000000000000",
+        "value": 0.002564103582238329
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "277144702500189409216161805148800497900803652764073551065311225449426762261269/35668509048774328320000000000000000000000000000000000000000000000000000000000000000",
+        "value": 7.770010855267663e-06
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "1/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_frequency_error": {
+        "exact": "1/4",
+        "value": 0.25
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_frequency_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_frequency_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_frequency_error": {
+        "exact": "1/4",
+        "value": 0.25
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_frequency_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_frequency_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_frequency_error": {
+        "exact": "1/4",
+        "value": 0.25
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_frequency_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_frequency_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_frequency_error": {
+        "exact": "1/4",
+        "value": 0.25
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_frequency_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_frequency_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_frequency_error": {
+        "exact": "1/4",
+        "value": 0.25
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_frequency_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_frequency_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_frequency_error": {
+        "exact": "1/4",
+        "value": 0.25
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_frequency_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_frequency_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_frequency_error": {
+        "exact": "1/4",
+        "value": 0.25
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_frequency_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_frequency_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_frequency_error": {
+        "exact": "1/4",
+        "value": 0.25
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_frequency_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_frequency_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_frequency_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      }
+    },
+    {
+      "epsilon_history": "1/2",
+      "epsilon_test": "1/2",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "9/20",
+        "value": 0.45
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "6/25",
+        "value": 0.24
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "3/25",
+        "value": 0.12
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "3/130",
+        "value": 0.023076923076923078
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/14300",
+        "value": 6.993006993006993e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "17/100",
+        "value": 0.17
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "9/20",
+        "value": 0.45
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "34/375",
+        "value": 0.09066666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "6/25",
+        "value": 0.24
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "17/375",
+        "value": 0.04533333333333334
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "3/25",
+        "value": 0.12
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "17/1950",
+        "value": 0.008717948717948718
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "3/130",
+        "value": 0.023076923076923078
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "17/643500",
+        "value": 2.6418026418026417e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/14300",
+        "value": 6.993006993006993e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "13/100",
+        "value": 0.13
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "9/20",
+        "value": 0.45
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "26/375",
+        "value": 0.06933333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "6/25",
+        "value": 0.24
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "13/375",
+        "value": 0.034666666666666665
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "3/25",
+        "value": 0.12
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "1/150",
+        "value": 0.006666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "3/130",
+        "value": 0.023076923076923078
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "1/49500",
+        "value": 2.0202020202020203e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/14300",
+        "value": 6.993006993006993e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "91/1000",
+        "value": 0.091
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "9/20",
+        "value": 0.45
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "91/1875",
+        "value": 0.04853333333333333
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "6/25",
+        "value": 0.24
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "91/3750",
+        "value": 0.024266666666666666
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "3/25",
+        "value": 0.12
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "7/1500",
+        "value": 0.004666666666666667
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "3/130",
+        "value": 0.023076923076923078
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "7/495000",
+        "value": 1.4141414141414141e-05
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/14300",
+        "value": 6.993006993006993e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "5046449/80000000",
+        "value": 0.0630806125
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "9/20",
+        "value": 0.45
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "5046449/150000000",
+        "value": 0.033642993333333336
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "6/25",
+        "value": 0.24
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "5046449/300000000",
+        "value": 0.016821496666666668
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "3/25",
+        "value": 0.12
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "5046449/1560000000",
+        "value": 0.003234903205128205
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "3/130",
+        "value": 0.023076923076923078
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "5046449/514800000000",
+        "value": 9.802736985236985e-06
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/14300",
+        "value": 6.993006993006993e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "264506898973027733/5120000000000000000",
+        "value": 0.05166150370566948
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "9/20",
+        "value": 0.45
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "264506898973027733/9600000000000000000",
+        "value": 0.027552801976357056
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "6/25",
+        "value": 0.24
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "264506898973027733/19200000000000000000",
+        "value": 0.013776400988178528
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "3/25",
+        "value": 0.12
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "264506898973027733/99840000000000000000",
+        "value": 0.0026493078823420246
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "3/130",
+        "value": 0.023076923076923078
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "24046081724820703/2995200000000000000000",
+        "value": 8.028205704066741e-06
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/14300",
+        "value": 6.993006993006993e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "16788806467260931025012116275314636177/335544320000000000000000000000000000000",
+        "value": 0.05003454228419343
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "9/20",
+        "value": 0.45
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "16788806467260931025012116275314636177/629145600000000000000000000000000000000",
+        "value": 0.026685089218236497
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "6/25",
+        "value": 0.24
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "16788806467260931025012116275314636177/1258291200000000000000000000000000000000",
+        "value": 0.013342544609118248
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "3/25",
+        "value": 0.12
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "16788806467260931025012116275314636177/6543114240000000000000000000000000000000",
+        "value": 0.0025658739632919707
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "3/130",
+        "value": 0.023076923076923078
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "16788806467260931025012116275314636177/2159227699200000000000000000000000000000000",
+        "value": 7.775375646339305e-06
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/14300",
+        "value": 6.993006993006993e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 0,
+      "learned_prior_error": {
+        "exact": "3602881132502462319810103466934406472710447485932956163849045930842547909396497/72057594037927936000000000000000000000000000000000000000000000000000000000000000",
+        "value": 0.050000019853647416
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "always_prefer_A_error": {
+        "exact": "9/20",
+        "value": 0.45
+      },
+      "oracle_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 1,
+      "learned_prior_error": {
+        "exact": "3602881132502462319810103466934406472710447485932956163849045930842547909396497/135107988821114880000000000000000000000000000000000000000000000000000000000000000",
+        "value": 0.02666667725527862
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "always_prefer_A_error": {
+        "exact": "6/25",
+        "value": 0.24
+      },
+      "oracle_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 2,
+      "learned_prior_error": {
+        "exact": "3602881132502462319810103466934406472710447485932956163849045930842547909396497/270215977642229760000000000000000000000000000000000000000000000000000000000000000",
+        "value": 0.01333333862763931
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "always_prefer_A_error": {
+        "exact": "3/25",
+        "value": 0.12
+      },
+      "oracle_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 4,
+      "learned_prior_error": {
+        "exact": "277144702500189409216161805148800497900803652764073551065311225449426762261269/108086391056891904000000000000000000000000000000000000000000000000000000000000000",
+        "value": 0.002564103582238329
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "always_prefer_A_error": {
+        "exact": "3/130",
+        "value": 0.023076923076923078
+      },
+      "oracle_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 8,
+      "learned_prior_error": {
+        "exact": "277144702500189409216161805148800497900803652764073551065311225449426762261269/35668509048774328320000000000000000000000000000000000000000000000000000000000000000",
+        "value": 7.770010855267663e-06
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "always_prefer_A_error": {
+        "exact": "1/14300",
+        "value": 6.993006993006993e-05
+      },
+      "oracle_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "9/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 9,
+      "learned_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "balanced_fixed_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "always_prefer_A_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    }
+  ],
+  "population_reversal": [
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 0,
+      "retained_history_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 1,
+      "retained_history_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "reset_balanced_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_test_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 2,
+      "retained_history_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 4,
+      "retained_history_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 8,
+      "retained_history_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 0,
+      "new_task_calibration_examples": 9,
+      "retained_history_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "reset_balanced_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_test_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 0,
+      "retained_history_error": {
+        "exact": "33/100",
+        "value": 0.33
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 1,
+      "retained_history_error": {
+        "exact": "22/125",
+        "value": 0.176
+      },
+      "reset_balanced_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_test_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 2,
+      "retained_history_error": {
+        "exact": "11/125",
+        "value": 0.088
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 4,
+      "retained_history_error": {
+        "exact": "11/650",
+        "value": 0.016923076923076923
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 8,
+      "retained_history_error": {
+        "exact": "1/19500",
+        "value": 5.128205128205128e-05
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 1,
+      "new_task_calibration_examples": 9,
+      "retained_history_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "reset_balanced_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_test_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 0,
+      "retained_history_error": {
+        "exact": "37/100",
+        "value": 0.37
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 1,
+      "retained_history_error": {
+        "exact": "74/375",
+        "value": 0.19733333333333333
+      },
+      "reset_balanced_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_test_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 2,
+      "retained_history_error": {
+        "exact": "37/375",
+        "value": 0.09866666666666667
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 4,
+      "retained_history_error": {
+        "exact": "37/1950",
+        "value": 0.018974358974358976
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 8,
+      "retained_history_error": {
+        "exact": "37/643500",
+        "value": 5.74980574980575e-05
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 2,
+      "new_task_calibration_examples": 9,
+      "retained_history_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "reset_balanced_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_test_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 0,
+      "retained_history_error": {
+        "exact": "409/1000",
+        "value": 0.409
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 1,
+      "retained_history_error": {
+        "exact": "409/1875",
+        "value": 0.21813333333333335
+      },
+      "reset_balanced_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_test_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 2,
+      "retained_history_error": {
+        "exact": "409/3750",
+        "value": 0.10906666666666667
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 4,
+      "retained_history_error": {
+        "exact": "409/19500",
+        "value": 0.020974358974358974
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 8,
+      "retained_history_error": {
+        "exact": "409/6435000",
+        "value": 6.355866355866356e-05
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 4,
+      "new_task_calibration_examples": 9,
+      "retained_history_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "reset_balanced_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_test_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 0,
+      "retained_history_error": {
+        "exact": "34953551/80000000",
+        "value": 0.4369193875
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 1,
+      "retained_history_error": {
+        "exact": "34953551/150000000",
+        "value": 0.23302367333333332
+      },
+      "reset_balanced_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_test_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 2,
+      "retained_history_error": {
+        "exact": "34953551/300000000",
+        "value": 0.11651183666666666
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 4,
+      "retained_history_error": {
+        "exact": "34953551/1560000000",
+        "value": 0.022406122435897437
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 8,
+      "retained_history_error": {
+        "exact": "34953551/514800000000",
+        "value": 6.789734071484072e-05
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 8,
+      "new_task_calibration_examples": 9,
+      "retained_history_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "reset_balanced_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_test_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 0,
+      "retained_history_error": {
+        "exact": "2295493101026972267/5120000000000000000",
+        "value": 0.44833849629433054
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 1,
+      "retained_history_error": {
+        "exact": "2295493101026972267/9600000000000000000",
+        "value": 0.23911386469030962
+      },
+      "reset_balanced_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_test_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 2,
+      "retained_history_error": {
+        "exact": "2295493101026972267/19200000000000000000",
+        "value": 0.11955693234515481
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 4,
+      "retained_history_error": {
+        "exact": "2295493101026972267/99840000000000000000",
+        "value": 0.022991717758683618
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 8,
+      "retained_history_error": {
+        "exact": "2295493101026972267/32947200000000000000000",
+        "value": 6.967187199601097e-05
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 16,
+      "new_task_calibration_examples": 9,
+      "retained_history_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "reset_balanced_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_test_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 0,
+      "retained_history_error": {
+        "exact": "150983353532739068974987883724685363823/335544320000000000000000000000000000000",
+        "value": 0.4499654577158066
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 1,
+      "retained_history_error": {
+        "exact": "150983353532739068974987883724685363823/629145600000000000000000000000000000000",
+        "value": 0.23998157744843018
+      },
+      "reset_balanced_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_test_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 2,
+      "retained_history_error": {
+        "exact": "150983353532739068974987883724685363823/1258291200000000000000000000000000000000",
+        "value": 0.11999078872421509
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 4,
+      "retained_history_error": {
+        "exact": "150983353532739068974987883724685363823/6543114240000000000000000000000000000000",
+        "value": 0.02307515167773367
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 8,
+      "retained_history_error": {
+        "exact": "150983353532739068974987883724685363823/2159227699200000000000000000000000000000000",
+        "value": 6.992470205373839e-05
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 32,
+      "new_task_calibration_examples": 9,
+      "retained_history_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "reset_balanced_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_test_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 0,
+      "retained_history_error": {
+        "exact": "32425915886461505680189896533065593527289552514067043836150954069157452090603503/72057594037927936000000000000000000000000000000000000000000000000000000000000000",
+        "value": 0.44999998014635256
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/4",
+        "value": 0.25
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/20",
+        "value": 0.05
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 1,
+      "retained_history_error": {
+        "exact": "32425915886461505680189896533065593527289552514067043836150954069157452090603503/135107988821114880000000000000000000000000000000000000000000000000000000000000000",
+        "value": 0.23999998941138806
+      },
+      "reset_balanced_prior_error": {
+        "exact": "2/15",
+        "value": 0.13333333333333333
+      },
+      "oracle_test_frequency_error": {
+        "exact": "2/75",
+        "value": 0.02666666666666667
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 2,
+      "retained_history_error": {
+        "exact": "32425915886461505680189896533065593527289552514067043836150954069157452090603503/270215977642229760000000000000000000000000000000000000000000000000000000000000000",
+        "value": 0.11999999470569403
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/15",
+        "value": 0.06666666666666667
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/75",
+        "value": 0.013333333333333334
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 4,
+      "retained_history_error": {
+        "exact": "32425915886461505680189896533065593527289552514067043836150954069157452090603503/1405123083739594752000000000000000000000000000000000000000000000000000000000000000",
+        "value": 0.02307692205878731
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/78",
+        "value": 0.01282051282051282
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/390",
+        "value": 0.002564102564102564
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 8,
+      "retained_history_error": {
+        "exact": "32425915886461505680189896533065593527289552514067043836150954069157452090603503/463690617634066268160000000000000000000000000000000000000000000000000000000000000000",
+        "value": 6.993006684481003e-05
+      },
+      "reset_balanced_prior_error": {
+        "exact": "1/25740",
+        "value": 3.885003885003885e-05
+      },
+      "oracle_test_frequency_error": {
+        "exact": "1/128700",
+        "value": 7.77000777000777e-06
+      }
+    },
+    {
+      "epsilon_history": "1/10",
+      "epsilon_test": "9/10",
+      "historical_tasks": 64,
+      "new_task_calibration_examples": 9,
+      "retained_history_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "reset_balanced_prior_error": {
+        "exact": "0",
+        "value": 0.0
+      },
+      "oracle_test_frequency_error": {
+        "exact": "0",
+        "value": 0.0
+      }
+    }
+  ],
+  "exact_checks": [
+    "Multinomial counts equal weighted path enumeration for 0..4 historical observations.",
+    "Calibration risk reduction agrees with direct subset/test-input enumeration for n=0,1,2,4 and three count states.",
+    "Balanced population gives 25% error without new-task calibration regardless of history size.",
+    "Nine distinct calibration examples identify either task with certainty."
+  ],
+  "limitations": [
+    "Candidate task functions are known, unlike the earlier 256-rule learner; do not compare error rates across those protocols as architecture gains.",
+    "No estimate was selected using test-task labels or its population frequency.",
+    "Exact zero-error identification depends on noiseless labels and the two-function task family.",
+    "The population-reversal control tests an intentionally false exchangeability assumption, not an adaptive change detector.",
+    "No periodic history order is required; the posterior depends only on additive counts.",
+    "Historical labels and meta-memory cost are additional resources; this is not free performance improvement.",
+    "Posterior-majority decisions equal an ordinary empirical task-frequency majority rule.",
+    "No IST training, hardware cost measurement or independent Information Spiral structure established."
+  ]
+}

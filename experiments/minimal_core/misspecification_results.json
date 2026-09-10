@@ -1,0 +1,3856 @@
+{
+  "experiment": "misspecification-enumeration-v1",
+  "task_mixture": "Choose compatible parity with probability 1-epsilon, all-bit parity with probability epsilon once per episode; task ID is hidden; train/test rule is fixed within episode.",
+  "prior": "pi_lambda(h)=(1-lambda)/256 + lambda*1[h in S]/16; S fixes the second-phase update to identity.",
+  "learner": "Exact consistency posterior, weighted majority prediction, fair ties; empty posterior explicitly reported and assigned fair-coin fallback loss.",
+  "evaluation": "Uniform n-element training subsets without replacement; test only remaining examples.",
+  "task_curves": {
+    "compatible": {
+      "0": [
+        {
+          "training_examples": 0,
+          "twice_error_sum": 12,
+          "error_denominator": 32,
+          "unseen_error": 0.375,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 1,
+          "twice_error_sum": 200,
+          "error_denominator": 480,
+          "unseen_error": 0.4166666666666667,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 2,
+          "twice_error_sum": 1524,
+          "error_denominator": 3360,
+          "unseen_error": 0.45357142857142857,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 3,
+          "twice_error_sum": 5900,
+          "error_denominator": 14560,
+          "unseen_error": 0.4052197802197802,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 4,
+          "twice_error_sum": 12644,
+          "error_denominator": 43680,
+          "unseen_error": 0.2894688644688645,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 5,
+          "twice_error_sum": 15292,
+          "error_denominator": 96096,
+          "unseen_error": 0.15913253413253414,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 6,
+          "twice_error_sum": 10580,
+          "error_denominator": 160160,
+          "unseen_error": 0.06605894105894106,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 7,
+          "twice_error_sum": 4172,
+          "error_denominator": 205920,
+          "unseen_error": 0.02026029526029526,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 8,
+          "twice_error_sum": 876,
+          "error_denominator": 205920,
+          "unseen_error": 0.004254079254079254,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 12870,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 9,
+          "twice_error_sum": 76,
+          "error_denominator": 160160,
+          "unseen_error": 0.0004745254745254745,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 10,
+          "twice_error_sum": 0,
+          "error_denominator": 96096,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 11,
+          "twice_error_sum": 0,
+          "error_denominator": 43680,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 12,
+          "twice_error_sum": 0,
+          "error_denominator": 14560,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 13,
+          "twice_error_sum": 0,
+          "error_denominator": 3360,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 14,
+          "twice_error_sum": 0,
+          "error_denominator": 480,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 15,
+          "twice_error_sum": 0,
+          "error_denominator": 32,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 16,
+          "twice_error_sum": 0,
+          "error_denominator": 0,
+          "unseen_error": null,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        }
+      ],
+      "1/2": [
+        {
+          "training_examples": 0,
+          "twice_error_sum": 8,
+          "error_denominator": 32,
+          "unseen_error": 0.25,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 1,
+          "twice_error_sum": 160,
+          "error_denominator": 480,
+          "unseen_error": 0.3333333333333333,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 2,
+          "twice_error_sum": 984,
+          "error_denominator": 3360,
+          "unseen_error": 0.29285714285714287,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 3,
+          "twice_error_sum": 2808,
+          "error_denominator": 14560,
+          "unseen_error": 0.19285714285714287,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 4,
+          "twice_error_sum": 4024,
+          "error_denominator": 43680,
+          "unseen_error": 0.09212454212454213,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 5,
+          "twice_error_sum": 3152,
+          "error_denominator": 96096,
+          "unseen_error": 0.0328005328005328,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 6,
+          "twice_error_sum": 1456,
+          "error_denominator": 160160,
+          "unseen_error": 0.00909090909090909,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 7,
+          "twice_error_sum": 384,
+          "error_denominator": 205920,
+          "unseen_error": 0.0018648018648018648,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 8,
+          "twice_error_sum": 48,
+          "error_denominator": 205920,
+          "unseen_error": 0.0002331002331002331,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 12870,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 9,
+          "twice_error_sum": 0,
+          "error_denominator": 160160,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 10,
+          "twice_error_sum": 0,
+          "error_denominator": 96096,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 11,
+          "twice_error_sum": 0,
+          "error_denominator": 43680,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 12,
+          "twice_error_sum": 0,
+          "error_denominator": 14560,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 13,
+          "twice_error_sum": 0,
+          "error_denominator": 3360,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 14,
+          "twice_error_sum": 0,
+          "error_denominator": 480,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 15,
+          "twice_error_sum": 0,
+          "error_denominator": 32,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 16,
+          "twice_error_sum": 0,
+          "error_denominator": 0,
+          "unseen_error": null,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        }
+      ],
+      "9/10": [
+        {
+          "training_examples": 0,
+          "twice_error_sum": 8,
+          "error_denominator": 32,
+          "unseen_error": 0.25,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 1,
+          "twice_error_sum": 152,
+          "error_denominator": 480,
+          "unseen_error": 0.31666666666666665,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 2,
+          "twice_error_sum": 780,
+          "error_denominator": 3360,
+          "unseen_error": 0.23214285714285715,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 3,
+          "twice_error_sum": 1876,
+          "error_denominator": 14560,
+          "unseen_error": 0.12884615384615383,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 4,
+          "twice_error_sum": 2488,
+          "error_denominator": 43680,
+          "unseen_error": 0.05695970695970696,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 5,
+          "twice_error_sum": 1932,
+          "error_denominator": 96096,
+          "unseen_error": 0.020104895104895104,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 6,
+          "twice_error_sum": 920,
+          "error_denominator": 160160,
+          "unseen_error": 0.005744255744255744,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 7,
+          "twice_error_sum": 256,
+          "error_denominator": 205920,
+          "unseen_error": 0.0012432012432012432,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 8,
+          "twice_error_sum": 32,
+          "error_denominator": 205920,
+          "unseen_error": 0.0001554001554001554,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 12870,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 9,
+          "twice_error_sum": 0,
+          "error_denominator": 160160,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 10,
+          "twice_error_sum": 0,
+          "error_denominator": 96096,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 11,
+          "twice_error_sum": 0,
+          "error_denominator": 43680,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 12,
+          "twice_error_sum": 0,
+          "error_denominator": 14560,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 13,
+          "twice_error_sum": 0,
+          "error_denominator": 3360,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 14,
+          "twice_error_sum": 0,
+          "error_denominator": 480,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 15,
+          "twice_error_sum": 0,
+          "error_denominator": 32,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 16,
+          "twice_error_sum": 0,
+          "error_denominator": 0,
+          "unseen_error": null,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        }
+      ],
+      "1": [
+        {
+          "training_examples": 0,
+          "twice_error_sum": 8,
+          "error_denominator": 32,
+          "unseen_error": 0.25,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 1,
+          "twice_error_sum": 128,
+          "error_denominator": 480,
+          "unseen_error": 0.26666666666666666,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 2,
+          "twice_error_sum": 704,
+          "error_denominator": 3360,
+          "unseen_error": 0.20952380952380953,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 3,
+          "twice_error_sum": 1664,
+          "error_denominator": 14560,
+          "unseen_error": 0.11428571428571428,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 4,
+          "twice_error_sum": 2208,
+          "error_denominator": 43680,
+          "unseen_error": 0.05054945054945055,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 5,
+          "twice_error_sum": 1792,
+          "error_denominator": 96096,
+          "unseen_error": 0.018648018648018648,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 6,
+          "twice_error_sum": 896,
+          "error_denominator": 160160,
+          "unseen_error": 0.005594405594405594,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 7,
+          "twice_error_sum": 256,
+          "error_denominator": 205920,
+          "unseen_error": 0.0012432012432012432,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 8,
+          "twice_error_sum": 32,
+          "error_denominator": 205920,
+          "unseen_error": 0.0001554001554001554,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 12870,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 9,
+          "twice_error_sum": 0,
+          "error_denominator": 160160,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 10,
+          "twice_error_sum": 0,
+          "error_denominator": 96096,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 11,
+          "twice_error_sum": 0,
+          "error_denominator": 43680,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 12,
+          "twice_error_sum": 0,
+          "error_denominator": 14560,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 13,
+          "twice_error_sum": 0,
+          "error_denominator": 3360,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 14,
+          "twice_error_sum": 0,
+          "error_denominator": 480,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 15,
+          "twice_error_sum": 0,
+          "error_denominator": 32,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 16,
+          "twice_error_sum": 0,
+          "error_denominator": 0,
+          "unseen_error": null,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        }
+      ]
+    },
+    "incompatible": {
+      "0": [
+        {
+          "training_examples": 0,
+          "twice_error_sum": 12,
+          "error_denominator": 32,
+          "unseen_error": 0.375,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 1,
+          "twice_error_sum": 200,
+          "error_denominator": 480,
+          "unseen_error": 0.4166666666666667,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 2,
+          "twice_error_sum": 1504,
+          "error_denominator": 3360,
+          "unseen_error": 0.44761904761904764,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 3,
+          "twice_error_sum": 5900,
+          "error_denominator": 14560,
+          "unseen_error": 0.4052197802197802,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 4,
+          "twice_error_sum": 12692,
+          "error_denominator": 43680,
+          "unseen_error": 0.2905677655677656,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 5,
+          "twice_error_sum": 15308,
+          "error_denominator": 96096,
+          "unseen_error": 0.1592990342990343,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 6,
+          "twice_error_sum": 10652,
+          "error_denominator": 160160,
+          "unseen_error": 0.0665084915084915,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 7,
+          "twice_error_sum": 4248,
+          "error_denominator": 205920,
+          "unseen_error": 0.02062937062937063,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 8,
+          "twice_error_sum": 896,
+          "error_denominator": 205920,
+          "unseen_error": 0.004351204351204351,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 12870,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 9,
+          "twice_error_sum": 76,
+          "error_denominator": 160160,
+          "unseen_error": 0.0004745254745254745,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 10,
+          "twice_error_sum": 0,
+          "error_denominator": 96096,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 11,
+          "twice_error_sum": 0,
+          "error_denominator": 43680,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 12,
+          "twice_error_sum": 0,
+          "error_denominator": 14560,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 13,
+          "twice_error_sum": 0,
+          "error_denominator": 3360,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 14,
+          "twice_error_sum": 0,
+          "error_denominator": 480,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 15,
+          "twice_error_sum": 0,
+          "error_denominator": 32,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 16,
+          "twice_error_sum": 0,
+          "error_denominator": 0,
+          "unseen_error": null,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        }
+      ],
+      "1/2": [
+        {
+          "training_examples": 0,
+          "twice_error_sum": 16,
+          "error_denominator": 32,
+          "unseen_error": 0.5,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 1,
+          "twice_error_sum": 244,
+          "error_denominator": 480,
+          "unseen_error": 0.5083333333333333,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 2,
+          "twice_error_sum": 1652,
+          "error_denominator": 3360,
+          "unseen_error": 0.49166666666666664,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 3,
+          "twice_error_sum": 6520,
+          "error_denominator": 14560,
+          "unseen_error": 0.4478021978021978,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 4,
+          "twice_error_sum": 14288,
+          "error_denominator": 43680,
+          "unseen_error": 0.3271062271062271,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 5,
+          "twice_error_sum": 17632,
+          "error_denominator": 96096,
+          "unseen_error": 0.1834831834831835,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 6,
+          "twice_error_sum": 12388,
+          "error_denominator": 160160,
+          "unseen_error": 0.07734765234765235,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 7,
+          "twice_error_sum": 4880,
+          "error_denominator": 205920,
+          "unseen_error": 0.0236985236985237,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 8,
+          "twice_error_sum": 984,
+          "error_denominator": 205920,
+          "unseen_error": 0.004778554778554779,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 12870,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 9,
+          "twice_error_sum": 76,
+          "error_denominator": 160160,
+          "unseen_error": 0.0004745254745254745,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 10,
+          "twice_error_sum": 0,
+          "error_denominator": 96096,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 11,
+          "twice_error_sum": 0,
+          "error_denominator": 43680,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 12,
+          "twice_error_sum": 0,
+          "error_denominator": 14560,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 13,
+          "twice_error_sum": 0,
+          "error_denominator": 3360,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 14,
+          "twice_error_sum": 0,
+          "error_denominator": 480,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 15,
+          "twice_error_sum": 0,
+          "error_denominator": 32,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 16,
+          "twice_error_sum": 0,
+          "error_denominator": 0,
+          "unseen_error": null,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        }
+      ],
+      "9/10": [
+        {
+          "training_examples": 0,
+          "twice_error_sum": 16,
+          "error_denominator": 32,
+          "unseen_error": 0.5,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 1,
+          "twice_error_sum": 252,
+          "error_denominator": 480,
+          "unseen_error": 0.525,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 2,
+          "twice_error_sum": 1744,
+          "error_denominator": 3360,
+          "unseen_error": 0.5190476190476191,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 3,
+          "twice_error_sum": 6652,
+          "error_denominator": 14560,
+          "unseen_error": 0.45686813186813185,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 4,
+          "twice_error_sum": 14396,
+          "error_denominator": 43680,
+          "unseen_error": 0.3295787545787546,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 5,
+          "twice_error_sum": 17644,
+          "error_denominator": 96096,
+          "unseen_error": 0.18360805860805862,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 6,
+          "twice_error_sum": 12388,
+          "error_denominator": 160160,
+          "unseen_error": 0.07734765234765235,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 7,
+          "twice_error_sum": 4880,
+          "error_denominator": 205920,
+          "unseen_error": 0.0236985236985237,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 8,
+          "twice_error_sum": 984,
+          "error_denominator": 205920,
+          "unseen_error": 0.004778554778554779,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 12870,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 9,
+          "twice_error_sum": 76,
+          "error_denominator": 160160,
+          "unseen_error": 0.0004745254745254745,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 10,
+          "twice_error_sum": 0,
+          "error_denominator": 96096,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 11,
+          "twice_error_sum": 0,
+          "error_denominator": 43680,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 12,
+          "twice_error_sum": 0,
+          "error_denominator": 14560,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 13,
+          "twice_error_sum": 0,
+          "error_denominator": 3360,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 14,
+          "twice_error_sum": 0,
+          "error_denominator": 480,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 15,
+          "twice_error_sum": 0,
+          "error_denominator": 32,
+          "unseen_error": 0.0,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 16,
+          "twice_error_sum": 0,
+          "error_denominator": 0,
+          "unseen_error": null,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        }
+      ],
+      "1": [
+        {
+          "training_examples": 0,
+          "twice_error_sum": 16,
+          "error_denominator": 32,
+          "unseen_error": 0.5,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 1,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 1,
+          "twice_error_sum": 256,
+          "error_denominator": 480,
+          "unseen_error": 0.5333333333333333,
+          "empty_posterior_subsets": 0,
+          "training_subsets": 16,
+          "empty_posterior_probability": 0.0
+        },
+        {
+          "training_examples": 2,
+          "twice_error_sum": 1872,
+          "error_denominator": 3360,
+          "unseen_error": 0.5571428571428572,
+          "empty_posterior_subsets": 24,
+          "training_subsets": 120,
+          "empty_posterior_probability": 0.2
+        },
+        {
+          "training_examples": 3,
+          "twice_error_sum": 8120,
+          "error_denominator": 14560,
+          "unseen_error": 0.5576923076923077,
+          "empty_posterior_subsets": 280,
+          "training_subsets": 560,
+          "empty_posterior_probability": 0.5
+        },
+        {
+          "training_examples": 4,
+          "twice_error_sum": 23656,
+          "error_denominator": 43680,
+          "unseen_error": 0.5415750915750915,
+          "empty_posterior_subsets": 1366,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 0.7505494505494505
+        },
+        {
+          "training_examples": 5,
+          "twice_error_sum": 50208,
+          "error_denominator": 96096,
+          "unseen_error": 0.5224775224775224,
+          "empty_posterior_subsets": 3936,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 0.9010989010989011
+        },
+        {
+          "training_examples": 6,
+          "twice_error_sum": 81520,
+          "error_denominator": 160160,
+          "unseen_error": 0.508991008991009,
+          "empty_posterior_subsets": 7768,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 0.97002997002997
+        },
+        {
+          "training_examples": 7,
+          "twice_error_sum": 103464,
+          "error_denominator": 205920,
+          "unseen_error": 0.5024475524475525,
+          "empty_posterior_subsets": 11368,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 0.9937062937062937
+        },
+        {
+          "training_examples": 8,
+          "twice_error_sum": 103032,
+          "error_denominator": 205920,
+          "unseen_error": 0.5003496503496504,
+          "empty_posterior_subsets": 12861,
+          "training_subsets": 12870,
+          "empty_posterior_probability": 0.9993006993006993
+        },
+        {
+          "training_examples": 9,
+          "twice_error_sum": 80080,
+          "error_denominator": 160160,
+          "unseen_error": 0.5,
+          "empty_posterior_subsets": 11440,
+          "training_subsets": 11440,
+          "empty_posterior_probability": 1.0
+        },
+        {
+          "training_examples": 10,
+          "twice_error_sum": 48048,
+          "error_denominator": 96096,
+          "unseen_error": 0.5,
+          "empty_posterior_subsets": 8008,
+          "training_subsets": 8008,
+          "empty_posterior_probability": 1.0
+        },
+        {
+          "training_examples": 11,
+          "twice_error_sum": 21840,
+          "error_denominator": 43680,
+          "unseen_error": 0.5,
+          "empty_posterior_subsets": 4368,
+          "training_subsets": 4368,
+          "empty_posterior_probability": 1.0
+        },
+        {
+          "training_examples": 12,
+          "twice_error_sum": 7280,
+          "error_denominator": 14560,
+          "unseen_error": 0.5,
+          "empty_posterior_subsets": 1820,
+          "training_subsets": 1820,
+          "empty_posterior_probability": 1.0
+        },
+        {
+          "training_examples": 13,
+          "twice_error_sum": 1680,
+          "error_denominator": 3360,
+          "unseen_error": 0.5,
+          "empty_posterior_subsets": 560,
+          "training_subsets": 560,
+          "empty_posterior_probability": 1.0
+        },
+        {
+          "training_examples": 14,
+          "twice_error_sum": 240,
+          "error_denominator": 480,
+          "unseen_error": 0.5,
+          "empty_posterior_subsets": 120,
+          "training_subsets": 120,
+          "empty_posterior_probability": 1.0
+        },
+        {
+          "training_examples": 15,
+          "twice_error_sum": 16,
+          "error_denominator": 32,
+          "unseen_error": 0.5,
+          "empty_posterior_subsets": 16,
+          "training_subsets": 16,
+          "empty_posterior_probability": 1.0
+        },
+        {
+          "training_examples": 16,
+          "twice_error_sum": 0,
+          "error_denominator": 0,
+          "unseen_error": null,
+          "empty_posterior_subsets": 1,
+          "training_subsets": 1,
+          "empty_posterior_probability": 1.0
+        }
+      ]
+    }
+  },
+  "hard_vs_uniform_crossings": [
+    {
+      "training_examples": 0,
+      "compatible_benefit": 0.125,
+      "incompatible_penalty": 0.125,
+      "algebraic_crossing_exact": "1/2",
+      "algebraic_crossing": 0.5,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 1,
+      "compatible_benefit": 0.15,
+      "incompatible_penalty": 0.11666666666666667,
+      "algebraic_crossing_exact": "9/16",
+      "algebraic_crossing": 0.5625,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 2,
+      "compatible_benefit": 0.24404761904761904,
+      "incompatible_penalty": 0.10952380952380952,
+      "algebraic_crossing_exact": "205/297",
+      "algebraic_crossing": 0.6902356902356902,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 3,
+      "compatible_benefit": 0.29093406593406596,
+      "incompatible_penalty": 0.15247252747252749,
+      "algebraic_crossing_exact": "353/538",
+      "algebraic_crossing": 0.6561338289962825,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 4,
+      "compatible_benefit": 0.23891941391941393,
+      "incompatible_penalty": 0.251007326007326,
+      "algebraic_crossing_exact": "2609/5350",
+      "algebraic_crossing": 0.4876635514018692,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 5,
+      "compatible_benefit": 0.1404845154845155,
+      "incompatible_penalty": 0.3631784881784882,
+      "algebraic_crossing_exact": "135/484",
+      "algebraic_crossing": 0.27892561983471076,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 6,
+      "compatible_benefit": 0.060464535464535465,
+      "incompatible_penalty": 0.4424825174825175,
+      "algebraic_crossing_exact": "2421/20138",
+      "algebraic_crossing": 0.12022047869699076,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 7,
+      "compatible_benefit": 0.019017094017094015,
+      "incompatible_penalty": 0.4818181818181818,
+      "algebraic_crossing_exact": "979/25783",
+      "algebraic_crossing": 0.03797075592444634,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 8,
+      "compatible_benefit": 0.004098679098679099,
+      "incompatible_penalty": 0.495998445998446,
+      "algebraic_crossing_exact": "211/25745",
+      "algebraic_crossing": 0.008195766168187998,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 9,
+      "compatible_benefit": 0.0004745254745254745,
+      "incompatible_penalty": 0.4995254745254745,
+      "algebraic_crossing_exact": "19/20020",
+      "algebraic_crossing": 0.000949050949050949,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 10,
+      "compatible_benefit": 0.0,
+      "incompatible_penalty": 0.5,
+      "algebraic_crossing_exact": "0",
+      "algebraic_crossing": 0.0,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 11,
+      "compatible_benefit": 0.0,
+      "incompatible_penalty": 0.5,
+      "algebraic_crossing_exact": "0",
+      "algebraic_crossing": 0.0,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 12,
+      "compatible_benefit": 0.0,
+      "incompatible_penalty": 0.5,
+      "algebraic_crossing_exact": "0",
+      "algebraic_crossing": 0.0,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 13,
+      "compatible_benefit": 0.0,
+      "incompatible_penalty": 0.5,
+      "algebraic_crossing_exact": "0",
+      "algebraic_crossing": 0.0,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 14,
+      "compatible_benefit": 0.0,
+      "incompatible_penalty": 0.5,
+      "algebraic_crossing_exact": "0",
+      "algebraic_crossing": 0.0,
+      "crossing_in_unit_interval": true
+    },
+    {
+      "training_examples": 15,
+      "compatible_benefit": 0.0,
+      "incompatible_penalty": 0.5,
+      "algebraic_crossing_exact": "0",
+      "algebraic_crossing": 0.0,
+      "crossing_in_unit_interval": true
+    }
+  ],
+  "mixture_risks": [
+    {
+      "training_examples": 0,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "3/8",
+          "value": 0.375
+        },
+        "1/2": {
+          "exact": "1/4",
+          "value": 0.25
+        },
+        "9/10": {
+          "exact": "1/4",
+          "value": 0.25
+        },
+        "1": {
+          "exact": "1/4",
+          "value": 0.25
+        }
+      }
+    },
+    {
+      "training_examples": 0,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "3/8",
+          "value": 0.375
+        },
+        "1/2": {
+          "exact": "101/400",
+          "value": 0.2525
+        },
+        "9/10": {
+          "exact": "101/400",
+          "value": 0.2525
+        },
+        "1": {
+          "exact": "101/400",
+          "value": 0.2525
+        }
+      }
+    },
+    {
+      "training_examples": 0,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "3/8",
+          "value": 0.375
+        },
+        "1/2": {
+          "exact": "21/80",
+          "value": 0.2625
+        },
+        "9/10": {
+          "exact": "21/80",
+          "value": 0.2625
+        },
+        "1": {
+          "exact": "21/80",
+          "value": 0.2625
+        }
+      }
+    },
+    {
+      "training_examples": 0,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "3/8",
+          "value": 0.375
+        },
+        "1/2": {
+          "exact": "11/40",
+          "value": 0.275
+        },
+        "9/10": {
+          "exact": "11/40",
+          "value": 0.275
+        },
+        "1": {
+          "exact": "11/40",
+          "value": 0.275
+        }
+      }
+    },
+    {
+      "training_examples": 0,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "3/8",
+          "value": 0.375
+        },
+        "1/2": {
+          "exact": "5/16",
+          "value": 0.3125
+        },
+        "9/10": {
+          "exact": "5/16",
+          "value": 0.3125
+        },
+        "1": {
+          "exact": "5/16",
+          "value": 0.3125
+        }
+      }
+    },
+    {
+      "training_examples": 0,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "3/8",
+          "value": 0.375
+        },
+        "1/2": {
+          "exact": "3/8",
+          "value": 0.375
+        },
+        "9/10": {
+          "exact": "3/8",
+          "value": 0.375
+        },
+        "1": {
+          "exact": "3/8",
+          "value": 0.375
+        }
+      }
+    },
+    {
+      "training_examples": 0,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "3/8",
+          "value": 0.375
+        },
+        "1/2": {
+          "exact": "1/2",
+          "value": 0.5
+        },
+        "9/10": {
+          "exact": "1/2",
+          "value": 0.5
+        },
+        "1": {
+          "exact": "1/2",
+          "value": 0.5
+        }
+      }
+    },
+    {
+      "training_examples": 1,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "5/12",
+          "value": 0.4166666666666667
+        },
+        "1/2": {
+          "exact": "1/3",
+          "value": 0.3333333333333333
+        },
+        "9/10": {
+          "exact": "19/60",
+          "value": 0.31666666666666665
+        },
+        "1": {
+          "exact": "4/15",
+          "value": 0.26666666666666666
+        }
+      }
+    },
+    {
+      "training_examples": 1,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "5/12",
+          "value": 0.4166666666666667
+        },
+        "1/2": {
+          "exact": "4021/12000",
+          "value": 0.33508333333333334
+        },
+        "9/10": {
+          "exact": "51/160",
+          "value": 0.31875
+        },
+        "1": {
+          "exact": "101/375",
+          "value": 0.2693333333333333
+        }
+      }
+    },
+    {
+      "training_examples": 1,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "5/12",
+          "value": 0.4166666666666667
+        },
+        "1/2": {
+          "exact": "821/2400",
+          "value": 0.34208333333333335
+        },
+        "9/10": {
+          "exact": "157/480",
+          "value": 0.32708333333333334
+        },
+        "1": {
+          "exact": "7/25",
+          "value": 0.28
+        }
+      }
+    },
+    {
+      "training_examples": 1,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "5/12",
+          "value": 0.4166666666666667
+        },
+        "1/2": {
+          "exact": "421/1200",
+          "value": 0.35083333333333333
+        },
+        "9/10": {
+          "exact": "27/80",
+          "value": 0.3375
+        },
+        "1": {
+          "exact": "22/75",
+          "value": 0.29333333333333333
+        }
+      }
+    },
+    {
+      "training_examples": 1,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "5/12",
+          "value": 0.4166666666666667
+        },
+        "1/2": {
+          "exact": "181/480",
+          "value": 0.3770833333333333
+        },
+        "9/10": {
+          "exact": "59/160",
+          "value": 0.36875
+        },
+        "1": {
+          "exact": "1/3",
+          "value": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "training_examples": 1,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "5/12",
+          "value": 0.4166666666666667
+        },
+        "1/2": {
+          "exact": "101/240",
+          "value": 0.42083333333333334
+        },
+        "9/10": {
+          "exact": "101/240",
+          "value": 0.42083333333333334
+        },
+        "1": {
+          "exact": "2/5",
+          "value": 0.4
+        }
+      }
+    },
+    {
+      "training_examples": 1,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "5/12",
+          "value": 0.4166666666666667
+        },
+        "1/2": {
+          "exact": "61/120",
+          "value": 0.5083333333333333
+        },
+        "9/10": {
+          "exact": "21/40",
+          "value": 0.525
+        },
+        "1": {
+          "exact": "8/15",
+          "value": 0.5333333333333333
+        }
+      }
+    },
+    {
+      "training_examples": 2,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "127/280",
+          "value": 0.45357142857142857
+        },
+        "1/2": {
+          "exact": "41/140",
+          "value": 0.29285714285714287
+        },
+        "9/10": {
+          "exact": "13/56",
+          "value": 0.23214285714285715
+        },
+        "1": {
+          "exact": "22/105",
+          "value": 0.20952380952380953
+        }
+      }
+    },
+    {
+      "training_examples": 2,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "7619/16800",
+          "value": 0.4535119047619048
+        },
+        "1/2": {
+          "exact": "24767/84000",
+          "value": 0.2948452380952381
+        },
+        "9/10": {
+          "exact": "19741/84000",
+          "value": 0.23501190476190476
+        },
+        "1": {
+          "exact": "213/1000",
+          "value": 0.213
+        }
+      }
+    },
+    {
+      "training_examples": 2,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "1523/3360",
+          "value": 0.4532738095238095
+        },
+        "1/2": {
+          "exact": "5087/16800",
+          "value": 0.30279761904761904
+        },
+        "9/10": {
+          "exact": "4141/16800",
+          "value": 0.24648809523809523
+        },
+        "1": {
+          "exact": "953/4200",
+          "value": 0.22690476190476191
+        }
+      }
+    },
+    {
+      "training_examples": 2,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "761/1680",
+          "value": 0.4529761904761905
+        },
+        "1/2": {
+          "exact": "2627/8400",
+          "value": 0.31273809523809526
+        },
+        "9/10": {
+          "exact": "313/1200",
+          "value": 0.2608333333333333
+        },
+        "1": {
+          "exact": "171/700",
+          "value": 0.24428571428571427
+        }
+      }
+    },
+    {
+      "training_examples": 2,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "217/480",
+          "value": 0.45208333333333334
+        },
+        "1/2": {
+          "exact": "1151/3360",
+          "value": 0.3425595238095238
+        },
+        "9/10": {
+          "exact": "1021/3360",
+          "value": 0.3038690476190476
+        },
+        "1": {
+          "exact": "83/280",
+          "value": 0.29642857142857143
+        }
+      }
+    },
+    {
+      "training_examples": 2,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "757/1680",
+          "value": 0.4505952380952381
+        },
+        "1/2": {
+          "exact": "659/1680",
+          "value": 0.39226190476190476
+        },
+        "9/10": {
+          "exact": "631/1680",
+          "value": 0.3755952380952381
+        },
+        "1": {
+          "exact": "23/60",
+          "value": 0.38333333333333336
+        }
+      }
+    },
+    {
+      "training_examples": 2,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "47/105",
+          "value": 0.44761904761904764
+        },
+        "1/2": {
+          "exact": "59/120",
+          "value": 0.49166666666666664
+        },
+        "9/10": {
+          "exact": "109/210",
+          "value": 0.5190476190476191
+        },
+        "1": {
+          "exact": "39/70",
+          "value": 0.5571428571428572
+        }
+      }
+    },
+    {
+      "training_examples": 3,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "295/728",
+          "value": 0.4052197802197802
+        },
+        "1/2": {
+          "exact": "27/140",
+          "value": 0.19285714285714287
+        },
+        "9/10": {
+          "exact": "67/520",
+          "value": 0.12884615384615383
+        },
+        "1": {
+          "exact": "4/35",
+          "value": 0.11428571428571428
+        }
+      }
+    },
+    {
+      "training_examples": 3,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "295/728",
+          "value": 0.4052197802197802
+        },
+        "1/2": {
+          "exact": "8891/45500",
+          "value": 0.19540659340659342
+        },
+        "9/10": {
+          "exact": "24047/182000",
+          "value": 0.13212637362637364
+        },
+        "1": {
+          "exact": "21607/182000",
+          "value": 0.11871978021978022
+        }
+      }
+    },
+    {
+      "training_examples": 3,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "295/728",
+          "value": 0.4052197802197802
+        },
+        "1/2": {
+          "exact": "1871/9100",
+          "value": 0.2056043956043956
+        },
+        "9/10": {
+          "exact": "5287/36400",
+          "value": 0.14524725274725275
+        },
+        "1": {
+          "exact": "4967/36400",
+          "value": 0.13645604395604397
+        }
+      }
+    },
+    {
+      "training_examples": 3,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "295/728",
+          "value": 0.4052197802197802
+        },
+        "1/2": {
+          "exact": "1987/9100",
+          "value": 0.21835164835164836
+        },
+        "9/10": {
+          "exact": "1471/9100",
+          "value": 0.16164835164835165
+        },
+        "1": {
+          "exact": "2887/18200",
+          "value": 0.15862637362637363
+        }
+      }
+    },
+    {
+      "training_examples": 3,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "295/728",
+          "value": 0.4052197802197802
+        },
+        "1/2": {
+          "exact": "467/1820",
+          "value": 0.25659340659340657
+        },
+        "9/10": {
+          "exact": "307/1456",
+          "value": 0.21085164835164835
+        },
+        "1": {
+          "exact": "1639/7280",
+          "value": 0.22513736263736264
+        }
+      }
+    },
+    {
+      "training_examples": 3,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "295/728",
+          "value": 0.4052197802197802
+        },
+        "1/2": {
+          "exact": "583/1820",
+          "value": 0.32032967032967036
+        },
+        "9/10": {
+          "exact": "41/140",
+          "value": 0.29285714285714287
+        },
+        "1": {
+          "exact": "1223/3640",
+          "value": 0.335989010989011
+        }
+      }
+    },
+    {
+      "training_examples": 3,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "295/728",
+          "value": 0.4052197802197802
+        },
+        "1/2": {
+          "exact": "163/364",
+          "value": 0.4478021978021978
+        },
+        "9/10": {
+          "exact": "1663/3640",
+          "value": 0.45686813186813185
+        },
+        "1": {
+          "exact": "29/52",
+          "value": 0.5576923076923077
+        }
+      }
+    },
+    {
+      "training_examples": 4,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "3161/10920",
+          "value": 0.2894688644688645
+        },
+        "1/2": {
+          "exact": "503/5460",
+          "value": 0.09212454212454213
+        },
+        "9/10": {
+          "exact": "311/5460",
+          "value": 0.05695970695970696
+        },
+        "1": {
+          "exact": "23/455",
+          "value": 0.05054945054945055
+        }
+      }
+    },
+    {
+      "training_examples": 4,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "19757/68250",
+          "value": 0.2894798534798535
+        },
+        "1/2": {
+          "exact": "7369/78000",
+          "value": 0.09447435897435898
+        },
+        "9/10": {
+          "exact": "9311/156000",
+          "value": 0.05968589743589744
+        },
+        "1": {
+          "exact": "30281/546000",
+          "value": 0.05545970695970696
+        }
+      }
+    },
+    {
+      "training_examples": 4,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "152/525",
+          "value": 0.2895238095238095
+        },
+        "1/2": {
+          "exact": "3781/36400",
+          "value": 0.10387362637362638
+        },
+        "9/10": {
+          "exact": "5139/72800",
+          "value": 0.07059065934065933
+        },
+        "1": {
+          "exact": "8201/109200",
+          "value": 0.0751007326007326
+        }
+      }
+    },
+    {
+      "training_examples": 4,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "15811/54600",
+          "value": 0.2895787545787546
+        },
+        "1/2": {
+          "exact": "6313/54600",
+          "value": 0.11562271062271062
+        },
+        "9/10": {
+          "exact": "9197/109200",
+          "value": 0.08422161172161172
+        },
+        "1": {
+          "exact": "5441/54600",
+          "value": 0.09965201465201465
+        }
+      }
+    },
+    {
+      "training_examples": 4,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "113/390",
+          "value": 0.28974358974358977
+        },
+        "1/2": {
+          "exact": "659/4368",
+          "value": 0.15086996336996336
+        },
+        "9/10": {
+          "exact": "1093/8736",
+          "value": 0.12511446886446886
+        },
+        "1": {
+          "exact": "757/4368",
+          "value": 0.1733058608058608
+        }
+      }
+    },
+    {
+      "training_examples": 4,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "3167/10920",
+          "value": 0.29001831501831504
+        },
+        "1/2": {
+          "exact": "109/520",
+          "value": 0.20961538461538462
+        },
+        "9/10": {
+          "exact": "201/1040",
+          "value": 0.19326923076923078
+        },
+        "1": {
+          "exact": "3233/10920",
+          "value": 0.29606227106227107
+        }
+      }
+    },
+    {
+      "training_examples": 4,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "3173/10920",
+          "value": 0.2905677655677656
+        },
+        "1/2": {
+          "exact": "893/2730",
+          "value": 0.3271062271062271
+        },
+        "9/10": {
+          "exact": "3599/10920",
+          "value": 0.3295787545787546
+        },
+        "1": {
+          "exact": "2957/5460",
+          "value": 0.5415750915750915
+        }
+      }
+    },
+    {
+      "training_examples": 5,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "3823/24024",
+          "value": 0.15913253413253414
+        },
+        "1/2": {
+          "exact": "197/6006",
+          "value": 0.0328005328005328
+        },
+        "9/10": {
+          "exact": "23/1144",
+          "value": 0.020104895104895104
+        },
+        "1": {
+          "exact": "8/429",
+          "value": 0.018648018648018648
+        }
+      }
+    },
+    {
+      "training_examples": 5,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "919/5775",
+          "value": 0.15913419913419913
+        },
+        "1/2": {
+          "exact": "317/9240",
+          "value": 0.03430735930735931
+        },
+        "9/10": {
+          "exact": "1187/54600",
+          "value": 0.02173992673992674
+        },
+        "1": {
+          "exact": "2371/100100",
+          "value": 0.023686313686313687
+        }
+      }
+    },
+    {
+      "training_examples": 5,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "1593/10010",
+          "value": 0.15914085914085915
+        },
+        "1/2": {
+          "exact": "323/8008",
+          "value": 0.040334665334665336
+        },
+        "9/10": {
+          "exact": "3397/120120",
+          "value": 0.02828005328005328
+        },
+        "1": {
+          "exact": "2633/60060",
+          "value": 0.04383949383949384
+        }
+      }
+    },
+    {
+      "training_examples": 5,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "2731/17160",
+          "value": 0.15914918414918414
+        },
+        "1/2": {
+          "exact": "575/12012",
+          "value": 0.04786879786879787
+        },
+        "9/10": {
+          "exact": "4379/120120",
+          "value": 0.03645521145521145
+        },
+        "1": {
+          "exact": "691/10010",
+          "value": 0.06903096903096903
+        }
+      }
+    },
+    {
+      "training_examples": 5,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "478/3003",
+          "value": 0.15917415917415917
+        },
+        "1/2": {
+          "exact": "1693/24024",
+          "value": 0.07047119547119547
+        },
+        "9/10": {
+          "exact": "1465/24024",
+          "value": 0.060980685980685984
+        },
+        "1": {
+          "exact": "579/4004",
+          "value": 0.1446053946053946
+        }
+      }
+    },
+    {
+      "training_examples": 5,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "1275/8008",
+          "value": 0.15921578421578422
+        },
+        "1/2": {
+          "exact": "433/4004",
+          "value": 0.10814185814185814
+        },
+        "9/10": {
+          "exact": "2447/24024",
+          "value": 0.10185647685647686
+        },
+        "1": {
+          "exact": "125/462",
+          "value": 0.27056277056277056
+        }
+      }
+    },
+    {
+      "training_examples": 5,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "3827/24024",
+          "value": 0.1592990342990343
+        },
+        "1/2": {
+          "exact": "551/3003",
+          "value": 0.1834831834831835
+        },
+        "9/10": {
+          "exact": "401/2184",
+          "value": 0.18360805860805862
+        },
+        "1": {
+          "exact": "523/1001",
+          "value": 0.5224775224775224
+        }
+      }
+    },
+    {
+      "training_examples": 6,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "529/8008",
+          "value": 0.06605894105894106
+        },
+        "1/2": {
+          "exact": "1/110",
+          "value": 0.00909090909090909
+        },
+        "9/10": {
+          "exact": "23/4004",
+          "value": 0.005744255744255744
+        },
+        "1": {
+          "exact": "4/715",
+          "value": 0.005594405594405594
+        }
+      }
+    },
+    {
+      "training_examples": 6,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "132259/2002000",
+          "value": 0.06606343656343656
+        },
+        "1/2": {
+          "exact": "39133/4004000",
+          "value": 0.009773476523476524
+        },
+        "9/10": {
+          "exact": "25867/4004000",
+          "value": 0.00646028971028971
+        },
+        "1": {
+          "exact": "10639/1001000",
+          "value": 0.010628371628371628
+        }
+      }
+    },
+    {
+      "training_examples": 6,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "26459/400400",
+          "value": 0.06608141858141858
+        },
+        "1/2": {
+          "exact": "10013/800800",
+          "value": 0.012503746253746255
+        },
+        "9/10": {
+          "exact": "7467/800800",
+          "value": 0.009324425574425574
+        },
+        "1": {
+          "exact": "6159/200200",
+          "value": 0.030764235764235766
+        }
+      }
+    },
+    {
+      "training_examples": 6,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "509/7700",
+          "value": 0.06610389610389611
+        },
+        "1/2": {
+          "exact": "6373/400400",
+          "value": 0.015916583416583415
+        },
+        "9/10": {
+          "exact": "5167/400400",
+          "value": 0.012904595404595405
+        },
+        "1": {
+          "exact": "509/9100",
+          "value": 0.055934065934065934
+        }
+      }
+    },
+    {
+      "training_examples": 6,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "757/11440",
+          "value": 0.06617132867132867
+        },
+        "1/2": {
+          "exact": "4189/160160",
+          "value": 0.026155094905094906
+        },
+        "9/10": {
+          "exact": "541/22880",
+          "value": 0.023645104895104897
+        },
+        "1": {
+          "exact": "5263/40040",
+          "value": 0.13144355644355643
+        }
+      }
+    },
+    {
+      "training_examples": 6,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "1327/20020",
+          "value": 0.06628371628371628
+        },
+        "1/2": {
+          "exact": "3461/80080",
+          "value": 0.04321928071928072
+        },
+        "9/10": {
+          "exact": "3327/80080",
+          "value": 0.04154595404595405
+        },
+        "1": {
+          "exact": "5151/20020",
+          "value": 0.2572927072927073
+        }
+      }
+    },
+    {
+      "training_examples": 6,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "2663/40040",
+          "value": 0.0665084915084915
+        },
+        "1/2": {
+          "exact": "3097/40040",
+          "value": 0.07734765234765235
+        },
+        "9/10": {
+          "exact": "3097/40040",
+          "value": 0.07734765234765235
+        },
+        "1": {
+          "exact": "1019/2002",
+          "value": 0.508991008991009
+        }
+      }
+    },
+    {
+      "training_examples": 7,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "1043/51480",
+          "value": 0.02026029526029526
+        },
+        "1/2": {
+          "exact": "4/2145",
+          "value": 0.0018648018648018648
+        },
+        "9/10": {
+          "exact": "8/6435",
+          "value": 0.0012432012432012432
+        },
+        "1": {
+          "exact": "8/6435",
+          "value": 0.0012432012432012432
+        }
+      }
+    },
+    {
+      "training_examples": 7,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "11591/572000",
+          "value": 0.020263986013986015
+        },
+        "1/2": {
+          "exact": "2681/1287000",
+          "value": 0.002083139083139083
+        },
+        "9/10": {
+          "exact": "1889/1287000",
+          "value": 0.0014677544677544677
+        },
+        "1": {
+          "exact": "1789/286000",
+          "value": 0.006255244755244755
+        }
+      }
+    },
+    {
+      "training_examples": 7,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "20879/1029600",
+          "value": 0.02027874902874903
+        },
+        "1/2": {
+          "exact": "761/257400",
+          "value": 0.0029564879564879564
+        },
+        "9/10": {
+          "exact": "203/85800",
+          "value": 0.002365967365967366
+        },
+        "1": {
+          "exact": "1231/46800",
+          "value": 0.026303418803418802
+        }
+      }
+    },
+    {
+      "training_examples": 7,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "1161/57200",
+          "value": 0.020297202797202797
+        },
+        "1/2": {
+          "exact": "521/128700",
+          "value": 0.004048174048174048
+        },
+        "9/10": {
+          "exact": "449/128700",
+          "value": 0.003488733488733489
+        },
+        "1": {
+          "exact": "113/2200",
+          "value": 0.05136363636363636
+        }
+      }
+    },
+    {
+      "training_examples": 7,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "127/6240",
+          "value": 0.020352564102564103
+        },
+        "1/2": {
+          "exact": "29/3960",
+          "value": 0.0073232323232323236
+        },
+        "9/10": {
+          "exact": "353/51480",
+          "value": 0.006857031857031857
+        },
+        "1": {
+          "exact": "4343/34320",
+          "value": 0.12654428904428905
+        }
+      }
+    },
+    {
+      "training_examples": 7,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "421/20592",
+          "value": 0.020444832944832944
+        },
+        "1/2": {
+          "exact": "329/25740",
+          "value": 0.012781662781662782
+        },
+        "9/10": {
+          "exact": "107/8580",
+          "value": 0.012470862470862472
+        },
+        "1": {
+          "exact": "2593/10296",
+          "value": 0.25184537684537683
+        }
+      }
+    },
+    {
+      "training_examples": 7,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "59/2860",
+          "value": 0.02062937062937063
+        },
+        "1/2": {
+          "exact": "61/2574",
+          "value": 0.0236985236985237
+        },
+        "9/10": {
+          "exact": "61/2574",
+          "value": 0.0236985236985237
+        },
+        "1": {
+          "exact": "1437/2860",
+          "value": 0.5024475524475525
+        }
+      }
+    },
+    {
+      "training_examples": 8,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "73/17160",
+          "value": 0.004254079254079254
+        },
+        "1/2": {
+          "exact": "1/4290",
+          "value": 0.0002331002331002331
+        },
+        "9/10": {
+          "exact": "1/6435",
+          "value": 0.0001554001554001554
+        },
+        "1": {
+          "exact": "1/6435",
+          "value": 0.0001554001554001554
+        }
+      }
+    },
+    {
+      "training_examples": 8,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "337/79200",
+          "value": 0.004255050505050505
+        },
+        "1/2": {
+          "exact": "239/858000",
+          "value": 0.00027855477855477857
+        },
+        "9/10": {
+          "exact": "173/858000",
+          "value": 0.00020163170163170163
+        },
+        "1": {
+          "exact": "59/11440",
+          "value": 0.005157342657342657
+        }
+      }
+    },
+    {
+      "training_examples": 8,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "877/205920",
+          "value": 0.004258935508935509
+        },
+        "1/2": {
+          "exact": "79/171600",
+          "value": 0.00046037296037296037
+        },
+        "9/10": {
+          "exact": "199/514800",
+          "value": 0.00038655788655788656
+        },
+        "1": {
+          "exact": "2591/102960",
+          "value": 0.025165112665112666
+        }
+      }
+    },
+    {
+      "training_examples": 8,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "439/102960",
+          "value": 0.004263791763791764
+        },
+        "1/2": {
+          "exact": "59/85800",
+          "value": 0.0006876456876456876
+        },
+        "9/10": {
+          "exact": "53/85800",
+          "value": 0.0006177156177156177
+        },
+        "1": {
+          "exact": "287/5720",
+          "value": 0.050174825174825174
+        }
+      }
+    },
+    {
+      "training_examples": 8,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "881/205920",
+          "value": 0.004278360528360528
+        },
+        "1/2": {
+          "exact": "47/34320",
+          "value": 0.0013694638694638694
+        },
+        "9/10": {
+          "exact": "3/2288",
+          "value": 0.0013111888111888112
+        },
+        "1": {
+          "exact": "4297/34320",
+          "value": 0.1252039627039627
+        }
+      }
+    },
+    {
+      "training_examples": 8,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "443/102960",
+          "value": 0.004302641802641802
+        },
+        "1/2": {
+          "exact": "43/17160",
+          "value": 0.0025058275058275057
+        },
+        "9/10": {
+          "exact": "127/51480",
+          "value": 0.002466977466977467
+        },
+        "1": {
+          "exact": "991/3960",
+          "value": 0.2502525252525252
+        }
+      }
+    },
+    {
+      "training_examples": 8,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "28/6435",
+          "value": 0.004351204351204351
+        },
+        "1/2": {
+          "exact": "41/8580",
+          "value": 0.004778554778554779
+        },
+        "9/10": {
+          "exact": "41/8580",
+          "value": 0.004778554778554779
+        },
+        "1": {
+          "exact": "1431/2860",
+          "value": 0.5003496503496504
+        }
+      }
+    },
+    {
+      "training_examples": 9,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "19/40040",
+          "value": 0.0004745254745254745
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "0",
+          "value": 0.0
+        }
+      }
+    },
+    {
+      "training_examples": 9,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "19/40040",
+          "value": 0.0004745254745254745
+        },
+        "1/2": {
+          "exact": "19/4004000",
+          "value": 4.745254745254745e-06
+        },
+        "9/10": {
+          "exact": "19/4004000",
+          "value": 4.745254745254745e-06
+        },
+        "1": {
+          "exact": "1/200",
+          "value": 0.005
+        }
+      }
+    },
+    {
+      "training_examples": 9,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "19/40040",
+          "value": 0.0004745254745254745
+        },
+        "1/2": {
+          "exact": "19/800800",
+          "value": 2.3726273726273726e-05
+        },
+        "9/10": {
+          "exact": "19/800800",
+          "value": 2.3726273726273726e-05
+        },
+        "1": {
+          "exact": "1/40",
+          "value": 0.025
+        }
+      }
+    },
+    {
+      "training_examples": 9,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "19/40040",
+          "value": 0.0004745254745254745
+        },
+        "1/2": {
+          "exact": "19/400400",
+          "value": 4.745254745254745e-05
+        },
+        "9/10": {
+          "exact": "19/400400",
+          "value": 4.745254745254745e-05
+        },
+        "1": {
+          "exact": "1/20",
+          "value": 0.05
+        }
+      }
+    },
+    {
+      "training_examples": 9,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "19/40040",
+          "value": 0.0004745254745254745
+        },
+        "1/2": {
+          "exact": "19/160160",
+          "value": 0.00011863136863136863
+        },
+        "9/10": {
+          "exact": "19/160160",
+          "value": 0.00011863136863136863
+        },
+        "1": {
+          "exact": "1/8",
+          "value": 0.125
+        }
+      }
+    },
+    {
+      "training_examples": 9,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "19/40040",
+          "value": 0.0004745254745254745
+        },
+        "1/2": {
+          "exact": "19/80080",
+          "value": 0.00023726273726273726
+        },
+        "9/10": {
+          "exact": "19/80080",
+          "value": 0.00023726273726273726
+        },
+        "1": {
+          "exact": "1/4",
+          "value": 0.25
+        }
+      }
+    },
+    {
+      "training_examples": 9,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "19/40040",
+          "value": 0.0004745254745254745
+        },
+        "1/2": {
+          "exact": "19/40040",
+          "value": 0.0004745254745254745
+        },
+        "9/10": {
+          "exact": "19/40040",
+          "value": 0.0004745254745254745
+        },
+        "1": {
+          "exact": "1/2",
+          "value": 0.5
+        }
+      }
+    },
+    {
+      "training_examples": 10,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "0",
+          "value": 0.0
+        }
+      }
+    },
+    {
+      "training_examples": 10,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/200",
+          "value": 0.005
+        }
+      }
+    },
+    {
+      "training_examples": 10,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/40",
+          "value": 0.025
+        }
+      }
+    },
+    {
+      "training_examples": 10,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/20",
+          "value": 0.05
+        }
+      }
+    },
+    {
+      "training_examples": 10,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/8",
+          "value": 0.125
+        }
+      }
+    },
+    {
+      "training_examples": 10,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/4",
+          "value": 0.25
+        }
+      }
+    },
+    {
+      "training_examples": 10,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/2",
+          "value": 0.5
+        }
+      }
+    },
+    {
+      "training_examples": 11,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "0",
+          "value": 0.0
+        }
+      }
+    },
+    {
+      "training_examples": 11,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/200",
+          "value": 0.005
+        }
+      }
+    },
+    {
+      "training_examples": 11,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/40",
+          "value": 0.025
+        }
+      }
+    },
+    {
+      "training_examples": 11,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/20",
+          "value": 0.05
+        }
+      }
+    },
+    {
+      "training_examples": 11,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/8",
+          "value": 0.125
+        }
+      }
+    },
+    {
+      "training_examples": 11,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/4",
+          "value": 0.25
+        }
+      }
+    },
+    {
+      "training_examples": 11,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/2",
+          "value": 0.5
+        }
+      }
+    },
+    {
+      "training_examples": 12,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "0",
+          "value": 0.0
+        }
+      }
+    },
+    {
+      "training_examples": 12,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/200",
+          "value": 0.005
+        }
+      }
+    },
+    {
+      "training_examples": 12,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/40",
+          "value": 0.025
+        }
+      }
+    },
+    {
+      "training_examples": 12,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/20",
+          "value": 0.05
+        }
+      }
+    },
+    {
+      "training_examples": 12,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/8",
+          "value": 0.125
+        }
+      }
+    },
+    {
+      "training_examples": 12,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/4",
+          "value": 0.25
+        }
+      }
+    },
+    {
+      "training_examples": 12,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/2",
+          "value": 0.5
+        }
+      }
+    },
+    {
+      "training_examples": 13,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "0",
+          "value": 0.0
+        }
+      }
+    },
+    {
+      "training_examples": 13,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/200",
+          "value": 0.005
+        }
+      }
+    },
+    {
+      "training_examples": 13,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/40",
+          "value": 0.025
+        }
+      }
+    },
+    {
+      "training_examples": 13,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/20",
+          "value": 0.05
+        }
+      }
+    },
+    {
+      "training_examples": 13,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/8",
+          "value": 0.125
+        }
+      }
+    },
+    {
+      "training_examples": 13,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/4",
+          "value": 0.25
+        }
+      }
+    },
+    {
+      "training_examples": 13,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/2",
+          "value": 0.5
+        }
+      }
+    },
+    {
+      "training_examples": 14,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "0",
+          "value": 0.0
+        }
+      }
+    },
+    {
+      "training_examples": 14,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/200",
+          "value": 0.005
+        }
+      }
+    },
+    {
+      "training_examples": 14,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/40",
+          "value": 0.025
+        }
+      }
+    },
+    {
+      "training_examples": 14,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/20",
+          "value": 0.05
+        }
+      }
+    },
+    {
+      "training_examples": 14,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/8",
+          "value": 0.125
+        }
+      }
+    },
+    {
+      "training_examples": 14,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/4",
+          "value": 0.25
+        }
+      }
+    },
+    {
+      "training_examples": 14,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/2",
+          "value": 0.5
+        }
+      }
+    },
+    {
+      "training_examples": 15,
+      "epsilon": "0",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "0",
+          "value": 0.0
+        }
+      }
+    },
+    {
+      "training_examples": 15,
+      "epsilon": "1/100",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/200",
+          "value": 0.005
+        }
+      }
+    },
+    {
+      "training_examples": 15,
+      "epsilon": "1/20",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/40",
+          "value": 0.025
+        }
+      }
+    },
+    {
+      "training_examples": 15,
+      "epsilon": "1/10",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/20",
+          "value": 0.05
+        }
+      }
+    },
+    {
+      "training_examples": 15,
+      "epsilon": "1/4",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/8",
+          "value": 0.125
+        }
+      }
+    },
+    {
+      "training_examples": 15,
+      "epsilon": "1/2",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/4",
+          "value": 0.25
+        }
+      }
+    },
+    {
+      "training_examples": 15,
+      "epsilon": "1",
+      "risks": {
+        "0": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1/2": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "9/10": {
+          "exact": "0",
+          "value": 0.0
+        },
+        "1": {
+          "exact": "1/2",
+          "value": 0.5
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Only two specified task functions; epsilon is a stipulated deployment mixture.",
+    "Mixture boundaries depend on the learner, prior and declared failure cost.",
+    "Hard-prior rejection is not a valid Bayesian posterior; coin fallback is an external failure policy.",
+    "No neural training, hardware timing, continual concept drift or monotone state direction tested.",
+    "Soft-prior strengths were fixed for comparison, not learned online or selected on independent validation."
+  ]
+}

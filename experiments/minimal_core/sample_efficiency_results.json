@@ -1,0 +1,600 @@
+{
+  "experiment": "sample-efficiency-enumeration-v1",
+  "method": "All 65536 training subsets enumerated for each hypothesis class; error fractions exact.",
+  "learner": "Uniform prior over transition tables; exact consistency posterior; majority terminal prediction; fair ties.",
+  "state_and_information": "One bit of content state; identical externally supplied phase; fixed identity terminal readout.",
+  "general_pair_and_flat": {
+    "hypotheses": 256,
+    "distinct_labeling_functions": 67,
+    "curve": [
+      {
+        "training_examples": 0,
+        "training_subsets": 1,
+        "expected_unseen_error": 0.375,
+        "twice_error_sum": 12,
+        "error_denominator": 32,
+        "unique_labeling_probability": 0.0
+      },
+      {
+        "training_examples": 1,
+        "training_subsets": 16,
+        "expected_unseen_error": 0.4166666666666667,
+        "twice_error_sum": 200,
+        "error_denominator": 480,
+        "unique_labeling_probability": 0.0
+      },
+      {
+        "training_examples": 2,
+        "training_subsets": 120,
+        "expected_unseen_error": 0.45357142857142857,
+        "twice_error_sum": 1524,
+        "error_denominator": 3360,
+        "unique_labeling_probability": 0.0
+      },
+      {
+        "training_examples": 3,
+        "training_subsets": 560,
+        "expected_unseen_error": 0.4052197802197802,
+        "twice_error_sum": 5900,
+        "error_denominator": 14560,
+        "unique_labeling_probability": 0.0
+      },
+      {
+        "training_examples": 4,
+        "training_subsets": 1820,
+        "expected_unseen_error": 0.2894688644688645,
+        "twice_error_sum": 12644,
+        "error_denominator": 43680,
+        "unique_labeling_probability": 0.041758241758241756
+      },
+      {
+        "training_examples": 5,
+        "training_subsets": 4368,
+        "expected_unseen_error": 0.15913253413253414,
+        "twice_error_sum": 15292,
+        "error_denominator": 96096,
+        "unique_labeling_probability": 0.19230769230769232
+      },
+      {
+        "training_examples": 6,
+        "training_subsets": 8008,
+        "expected_unseen_error": 0.06605894105894106,
+        "twice_error_sum": 10580,
+        "error_denominator": 160160,
+        "unique_labeling_probability": 0.43156843156843155
+      },
+      {
+        "training_examples": 7,
+        "training_subsets": 11440,
+        "expected_unseen_error": 0.02026029526029526,
+        "twice_error_sum": 4172,
+        "error_denominator": 205920,
+        "unique_labeling_probability": 0.6604895104895104
+      },
+      {
+        "training_examples": 8,
+        "training_subsets": 12870,
+        "expected_unseen_error": 0.004254079254079254,
+        "twice_error_sum": 876,
+        "error_denominator": 205920,
+        "unique_labeling_probability": 0.8216006216006216
+      },
+      {
+        "training_examples": 9,
+        "training_subsets": 11440,
+        "expected_unseen_error": 0.0004745254745254745,
+        "twice_error_sum": 76,
+        "error_denominator": 160160,
+        "unique_labeling_probability": 0.9164335664335664
+      },
+      {
+        "training_examples": 10,
+        "training_subsets": 8008,
+        "expected_unseen_error": 0.0,
+        "twice_error_sum": 0,
+        "error_denominator": 96096,
+        "unique_labeling_probability": 0.9660339660339661
+      },
+      {
+        "training_examples": 11,
+        "training_subsets": 4368,
+        "expected_unseen_error": 0.0,
+        "twice_error_sum": 0,
+        "error_denominator": 43680,
+        "unique_labeling_probability": 0.989010989010989
+      },
+      {
+        "training_examples": 12,
+        "training_subsets": 1820,
+        "expected_unseen_error": 0.0,
+        "twice_error_sum": 0,
+        "error_denominator": 14560,
+        "unique_labeling_probability": 0.9978021978021978
+      },
+      {
+        "training_examples": 13,
+        "training_subsets": 560,
+        "expected_unseen_error": 0.0,
+        "twice_error_sum": 0,
+        "error_denominator": 3360,
+        "unique_labeling_probability": 1.0
+      },
+      {
+        "training_examples": 14,
+        "training_subsets": 120,
+        "expected_unseen_error": 0.0,
+        "twice_error_sum": 0,
+        "error_denominator": 480,
+        "unique_labeling_probability": 1.0
+      },
+      {
+        "training_examples": 15,
+        "training_subsets": 16,
+        "expected_unseen_error": 0.0,
+        "twice_error_sum": 0,
+        "error_denominator": 32,
+        "unique_labeling_probability": 1.0
+      },
+      {
+        "training_examples": 16,
+        "training_subsets": 1,
+        "expected_unseen_error": null,
+        "twice_error_sum": 0,
+        "error_denominator": 0,
+        "unique_labeling_probability": 1.0
+      }
+    ],
+    "first_n_with_expected_unseen_error_at_most_5_percent": 7,
+    "first_n_staying_at_most_5_percent_through_n15": 7,
+    "best_error_on_all_four_bit_parity": 0.0
+  },
+  "ignore_distractor_pair_and_flat": {
+    "hypotheses": 16,
+    "distinct_labeling_functions": 9,
+    "curve": [
+      {
+        "training_examples": 0,
+        "training_subsets": 1,
+        "expected_unseen_error": 0.25,
+        "twice_error_sum": 8,
+        "error_denominator": 32,
+        "unique_labeling_probability": 0.0
+      },
+      {
+        "training_examples": 1,
+        "training_subsets": 16,
+        "expected_unseen_error": 0.26666666666666666,
+        "twice_error_sum": 128,
+        "error_denominator": 480,
+        "unique_labeling_probability": 0.0
+      },
+      {
+        "training_examples": 2,
+        "training_subsets": 120,
+        "expected_unseen_error": 0.20952380952380953,
+        "twice_error_sum": 704,
+        "error_denominator": 3360,
+        "unique_labeling_probability": 0.0
+      },
+      {
+        "training_examples": 3,
+        "training_subsets": 560,
+        "expected_unseen_error": 0.11428571428571428,
+        "twice_error_sum": 1664,
+        "error_denominator": 14560,
+        "unique_labeling_probability": 0.0
+      },
+      {
+        "training_examples": 4,
+        "training_subsets": 1820,
+        "expected_unseen_error": 0.05054945054945055,
+        "twice_error_sum": 2208,
+        "error_denominator": 43680,
+        "unique_labeling_probability": 0.14065934065934066
+      },
+      {
+        "training_examples": 5,
+        "training_subsets": 4368,
+        "expected_unseen_error": 0.018648018648018648,
+        "twice_error_sum": 1792,
+        "error_denominator": 96096,
+        "unique_labeling_probability": 0.3516483516483517
+      },
+      {
+        "training_examples": 6,
+        "training_subsets": 8008,
+        "expected_unseen_error": 0.005594405594405594,
+        "twice_error_sum": 896,
+        "error_denominator": 160160,
+        "unique_labeling_probability": 0.5594405594405595
+      },
+      {
+        "training_examples": 7,
+        "training_subsets": 11440,
+        "expected_unseen_error": 0.0012432012432012432,
+        "twice_error_sum": 256,
+        "error_denominator": 205920,
+        "unique_labeling_probability": 0.7272727272727273
+      },
+      {
+        "training_examples": 8,
+        "training_subsets": 12870,
+        "expected_unseen_error": 0.0001554001554001554,
+        "twice_error_sum": 32,
+        "error_denominator": 205920,
+        "unique_labeling_probability": 0.8466200466200466
+      },
+      {
+        "training_examples": 9,
+        "training_subsets": 11440,
+        "expected_unseen_error": 0.0,
+        "twice_error_sum": 0,
+        "error_denominator": 160160,
+        "unique_labeling_probability": 0.9230769230769231
+      },
+      {
+        "training_examples": 10,
+        "training_subsets": 8008,
+        "expected_unseen_error": 0.0,
+        "twice_error_sum": 0,
+        "error_denominator": 96096,
+        "unique_labeling_probability": 0.967032967032967
+      },
+      {
+        "training_examples": 11,
+        "training_subsets": 4368,
+        "expected_unseen_error": 0.0,
+        "twice_error_sum": 0,
+        "error_denominator": 43680,
+        "unique_labeling_probability": 0.989010989010989
+      },
+      {
+        "training_examples": 12,
+        "training_subsets": 1820,
+        "expected_unseen_error": 0.0,
+        "twice_error_sum": 0,
+        "error_denominator": 14560,
+        "unique_labeling_probability": 0.9978021978021978
+      },
+      {
+        "training_examples": 13,
+        "training_subsets": 560,
+        "expected_unseen_error": 0.0,
+        "twice_error_sum": 0,
+        "error_denominator": 3360,
+        "unique_labeling_probability": 1.0
+      },
+      {
+        "training_examples": 14,
+        "training_subsets": 120,
+        "expected_unseen_error": 0.0,
+        "twice_error_sum": 0,
+        "error_denominator": 480,
+        "unique_labeling_probability": 1.0
+      },
+      {
+        "training_examples": 15,
+        "training_subsets": 16,
+        "expected_unseen_error": 0.0,
+        "twice_error_sum": 0,
+        "error_denominator": 32,
+        "unique_labeling_probability": 1.0
+      },
+      {
+        "training_examples": 16,
+        "training_subsets": 1,
+        "expected_unseen_error": null,
+        "twice_error_sum": 0,
+        "error_denominator": 0,
+        "unique_labeling_probability": 1.0
+      }
+    ],
+    "first_n_with_expected_unseen_error_at_most_5_percent": 5,
+    "first_n_staying_at_most_5_percent_through_n15": 5,
+    "best_error_on_all_four_bit_parity": 0.5
+  },
+  "uniform_function_prior_sensitivity": {
+    "description": "Give each distinct labeling function equal prior mass instead of each transition table.",
+    "general": {
+      "hypotheses": 67,
+      "distinct_labeling_functions": 67,
+      "curve": [
+        {
+          "training_examples": 0,
+          "training_subsets": 1,
+          "expected_unseen_error": 0.25,
+          "twice_error_sum": 8,
+          "error_denominator": 32,
+          "unique_labeling_probability": 0.0
+        },
+        {
+          "training_examples": 1,
+          "training_subsets": 16,
+          "expected_unseen_error": 0.36666666666666664,
+          "twice_error_sum": 176,
+          "error_denominator": 480,
+          "unique_labeling_probability": 0.0
+        },
+        {
+          "training_examples": 2,
+          "training_subsets": 120,
+          "expected_unseen_error": 0.3952380952380952,
+          "twice_error_sum": 1328,
+          "error_denominator": 3360,
+          "unique_labeling_probability": 0.0
+        },
+        {
+          "training_examples": 3,
+          "training_subsets": 560,
+          "expected_unseen_error": 0.4087912087912088,
+          "twice_error_sum": 5952,
+          "error_denominator": 14560,
+          "unique_labeling_probability": 0.0
+        },
+        {
+          "training_examples": 4,
+          "training_subsets": 1820,
+          "expected_unseen_error": 0.36236263736263735,
+          "twice_error_sum": 15828,
+          "error_denominator": 43680,
+          "unique_labeling_probability": 0.041758241758241756
+        },
+        {
+          "training_examples": 5,
+          "training_subsets": 4368,
+          "expected_unseen_error": 0.27347652347652346,
+          "twice_error_sum": 26280,
+          "error_denominator": 96096,
+          "unique_labeling_probability": 0.19230769230769232
+        },
+        {
+          "training_examples": 6,
+          "training_subsets": 8008,
+          "expected_unseen_error": 0.1762987012987013,
+          "twice_error_sum": 28236,
+          "error_denominator": 160160,
+          "unique_labeling_probability": 0.43156843156843155
+        },
+        {
+          "training_examples": 7,
+          "training_subsets": 11440,
+          "expected_unseen_error": 0.09961149961149961,
+          "twice_error_sum": 20512,
+          "error_denominator": 205920,
+          "unique_labeling_probability": 0.6604895104895104
+        },
+        {
+          "training_examples": 8,
+          "training_subsets": 12870,
+          "expected_unseen_error": 0.051592851592851596,
+          "twice_error_sum": 10624,
+          "error_denominator": 205920,
+          "unique_labeling_probability": 0.8216006216006216
+        },
+        {
+          "training_examples": 9,
+          "training_subsets": 11440,
+          "expected_unseen_error": 0.0252997002997003,
+          "twice_error_sum": 4052,
+          "error_denominator": 160160,
+          "unique_labeling_probability": 0.9164335664335664
+        },
+        {
+          "training_examples": 10,
+          "training_subsets": 8008,
+          "expected_unseen_error": 0.011488511488511488,
+          "twice_error_sum": 1104,
+          "error_denominator": 96096,
+          "unique_labeling_probability": 0.9660339660339661
+        },
+        {
+          "training_examples": 11,
+          "training_subsets": 4368,
+          "expected_unseen_error": 0.004395604395604396,
+          "twice_error_sum": 192,
+          "error_denominator": 43680,
+          "unique_labeling_probability": 0.989010989010989
+        },
+        {
+          "training_examples": 12,
+          "training_subsets": 1820,
+          "expected_unseen_error": 0.001098901098901099,
+          "twice_error_sum": 16,
+          "error_denominator": 14560,
+          "unique_labeling_probability": 0.9978021978021978
+        },
+        {
+          "training_examples": 13,
+          "training_subsets": 560,
+          "expected_unseen_error": 0.0,
+          "twice_error_sum": 0,
+          "error_denominator": 3360,
+          "unique_labeling_probability": 1.0
+        },
+        {
+          "training_examples": 14,
+          "training_subsets": 120,
+          "expected_unseen_error": 0.0,
+          "twice_error_sum": 0,
+          "error_denominator": 480,
+          "unique_labeling_probability": 1.0
+        },
+        {
+          "training_examples": 15,
+          "training_subsets": 16,
+          "expected_unseen_error": 0.0,
+          "twice_error_sum": 0,
+          "error_denominator": 32,
+          "unique_labeling_probability": 1.0
+        },
+        {
+          "training_examples": 16,
+          "training_subsets": 1,
+          "expected_unseen_error": null,
+          "twice_error_sum": 0,
+          "error_denominator": 0,
+          "unique_labeling_probability": 1.0
+        }
+      ],
+      "first_n_with_expected_unseen_error_at_most_5_percent": 9,
+      "first_n_staying_at_most_5_percent_through_n15": 9,
+      "best_error_on_all_four_bit_parity": 0.0
+    },
+    "ignore_distractor": {
+      "hypotheses": 9,
+      "distinct_labeling_functions": 9,
+      "curve": [
+        {
+          "training_examples": 0,
+          "training_subsets": 1,
+          "expected_unseen_error": 0.0,
+          "twice_error_sum": 0,
+          "error_denominator": 32,
+          "unique_labeling_probability": 0.0
+        },
+        {
+          "training_examples": 1,
+          "training_subsets": 16,
+          "expected_unseen_error": 0.13333333333333333,
+          "twice_error_sum": 64,
+          "error_denominator": 480,
+          "unique_labeling_probability": 0.0
+        },
+        {
+          "training_examples": 2,
+          "training_subsets": 120,
+          "expected_unseen_error": 0.18095238095238095,
+          "twice_error_sum": 608,
+          "error_denominator": 3360,
+          "unique_labeling_probability": 0.0
+        },
+        {
+          "training_examples": 3,
+          "training_subsets": 560,
+          "expected_unseen_error": 0.18021978021978022,
+          "twice_error_sum": 2624,
+          "error_denominator": 14560,
+          "unique_labeling_probability": 0.0
+        },
+        {
+          "training_examples": 4,
+          "training_subsets": 1820,
+          "expected_unseen_error": 0.15567765567765568,
+          "twice_error_sum": 6800,
+          "error_denominator": 43680,
+          "unique_labeling_probability": 0.14065934065934066
+        },
+        {
+          "training_examples": 5,
+          "training_subsets": 4368,
+          "expected_unseen_error": 0.12254412254412254,
+          "twice_error_sum": 11776,
+          "error_denominator": 96096,
+          "unique_labeling_probability": 0.3516483516483517
+        },
+        {
+          "training_examples": 6,
+          "training_subsets": 8008,
+          "expected_unseen_error": 0.08951048951048951,
+          "twice_error_sum": 14336,
+          "error_denominator": 160160,
+          "unique_labeling_probability": 0.5594405594405595
+        },
+        {
+          "training_examples": 7,
+          "training_subsets": 11440,
+          "expected_unseen_error": 0.06091686091686092,
+          "twice_error_sum": 12544,
+          "error_denominator": 205920,
+          "unique_labeling_probability": 0.7272727272727273
+        },
+        {
+          "training_examples": 8,
+          "training_subsets": 12870,
+          "expected_unseen_error": 0.03838383838383838,
+          "twice_error_sum": 7904,
+          "error_denominator": 205920,
+          "unique_labeling_probability": 0.8466200466200466
+        },
+        {
+          "training_examples": 9,
+          "training_subsets": 11440,
+          "expected_unseen_error": 0.02197802197802198,
+          "twice_error_sum": 3520,
+          "error_denominator": 160160,
+          "unique_labeling_probability": 0.9230769230769231
+        },
+        {
+          "training_examples": 10,
+          "training_subsets": 8008,
+          "expected_unseen_error": 0.01098901098901099,
+          "twice_error_sum": 1056,
+          "error_denominator": 96096,
+          "unique_labeling_probability": 0.967032967032967
+        },
+        {
+          "training_examples": 11,
+          "training_subsets": 4368,
+          "expected_unseen_error": 0.004395604395604396,
+          "twice_error_sum": 192,
+          "error_denominator": 43680,
+          "unique_labeling_probability": 0.989010989010989
+        },
+        {
+          "training_examples": 12,
+          "training_subsets": 1820,
+          "expected_unseen_error": 0.001098901098901099,
+          "twice_error_sum": 16,
+          "error_denominator": 14560,
+          "unique_labeling_probability": 0.9978021978021978
+        },
+        {
+          "training_examples": 13,
+          "training_subsets": 560,
+          "expected_unseen_error": 0.0,
+          "twice_error_sum": 0,
+          "error_denominator": 3360,
+          "unique_labeling_probability": 1.0
+        },
+        {
+          "training_examples": 14,
+          "training_subsets": 120,
+          "expected_unseen_error": 0.0,
+          "twice_error_sum": 0,
+          "error_denominator": 480,
+          "unique_labeling_probability": 1.0
+        },
+        {
+          "training_examples": 15,
+          "training_subsets": 16,
+          "expected_unseen_error": 0.0,
+          "twice_error_sum": 0,
+          "error_denominator": 32,
+          "unique_labeling_probability": 1.0
+        },
+        {
+          "training_examples": 16,
+          "training_subsets": 1,
+          "expected_unseen_error": null,
+          "twice_error_sum": 0,
+          "error_denominator": 0,
+          "unique_labeling_probability": 1.0
+        }
+      ],
+      "first_n_with_expected_unseen_error_at_most_5_percent": 0,
+      "first_n_staying_at_most_5_percent_through_n15": 8,
+      "best_error_on_all_four_bit_parity": 0.5
+    }
+  },
+  "pair_flat_predictions_identical_for_every_hypothesis_and_input": true,
+  "pair_flat_sample_efficiency_difference": 0,
+  "limitations": [
+    "No gradient optimization or neural architecture training tested.",
+    "Training sets sampled without replacement; not an IID-with-replacement sample complexity bound.",
+    "Primary prior is uniform over tables; a separate uniform-function-prior sensitivity check is included.",
+    "Five-percent threshold is a reporting convention, not a preregistered universal guarantee.",
+    "Expected held-out error is not a high-probability PAC guarantee.",
+    "The restricted class has an extra correct task assumption and fewer free table bits.",
+    "No monotone state drift or IST implementation tested."
+  ]
+}
