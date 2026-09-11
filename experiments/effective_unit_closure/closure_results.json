@@ -1,0 +1,3306 @@
+{
+  "schema_version": 1,
+  "question": "Does small stationary micro-conditioned closure error ensure uniform closure under fiber-preserving preparations?",
+  "probability_arithmetic": "exact fractions; float only for logarithms and reported metrics",
+  "seeds": "not applicable: exhaustive deterministic enumeration, no learned model",
+  "cases": [
+    {
+      "name": "independent_exact_control",
+      "r": "1/2",
+      "e0": "1/100",
+      "e1": "1/100",
+      "states": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "stationary_rational": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "kernel_rational": [
+        [
+          "99/200",
+          "99/200",
+          "1/200",
+          "1/200"
+        ],
+        [
+          "99/200",
+          "99/200",
+          "1/200",
+          "1/200"
+        ],
+        [
+          "1/200",
+          "1/200",
+          "99/200",
+          "99/200"
+        ],
+        [
+          "1/200",
+          "1/200",
+          "99/200",
+          "99/200"
+        ]
+      ],
+      "observed_flip_probability": 0.01,
+      "macro": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192068641040888,
+        "micro_information_about_same_target_bits": 0.9192068641040888,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 2.0,
+        "entropy_ratio": 0.5,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "99/100",
+            "1/100"
+          ],
+          [
+            "99/100",
+            "1/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "99/100",
+            "1/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ]
+        ]
+      },
+      "meso": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192068641040889,
+        "micro_information_about_same_target_bits": 0.9192068641040889,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 2.0,
+        "micro_entropy_bits": 2.0,
+        "entropy_ratio": 1.0,
+        "log_cardinality_ratio": 1.0,
+        "pushforward_kernel_rational": [
+          [
+            "99/200",
+            "99/200",
+            "1/200",
+            "1/200"
+          ],
+          [
+            "99/200",
+            "99/200",
+            "1/200",
+            "1/200"
+          ],
+          [
+            "1/200",
+            "1/200",
+            "99/200",
+            "99/200"
+          ],
+          [
+            "1/200",
+            "1/200",
+            "99/200",
+            "99/200"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "99/200",
+            "99/200",
+            "1/200",
+            "1/200"
+          ],
+          [
+            "99/200",
+            "99/200",
+            "1/200",
+            "1/200"
+          ],
+          [
+            "1/200",
+            "1/200",
+            "99/200",
+            "99/200"
+          ],
+          [
+            "1/200",
+            "1/200",
+            "99/200",
+            "99/200"
+          ]
+        ]
+      },
+      "same_capacity_parity": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.0,
+        "micro_information_about_same_target_bits": 0.0,
+        "prediction_retained_fraction": null,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 2.0,
+        "entropy_ratio": 0.5,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ]
+        ]
+      },
+      "parity_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.0
+      },
+      "macro_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.9192068641040888
+      },
+      "all_binary_partitions": [
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 0.8112781244591328,
+          "cmi_bits": 0.2177191226670679,
+          "fiber_diameter_tv": 0.49,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.2886068462694049
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 0.8112781244591328,
+          "cmi_bits": 0.2177191226670679,
+          "fiber_diameter_tv": 0.49,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.2886068462694049
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.9192068641040888
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "representation_entropy_bits": 0.8112781244591328,
+          "cmi_bits": 0.2177191226670679,
+          "fiber_diameter_tv": 0.49,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.2886068462694049
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.0
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.0
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 0.8112781244591328,
+          "cmi_bits": 0.2177191226670679,
+          "fiber_diameter_tv": 0.49,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.2886068462694049
+        }
+      ],
+      "causal_preparations": [
+        {
+          "prepare_A": 0,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 0.0
+        },
+        {
+          "prepare_A": 0,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 0.0
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 0.0
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 0.0
+        }
+      ],
+      "macro_paths_checked_exactly": 32
+    },
+    {
+      "name": "broken_complement_control",
+      "r": "1/1000000",
+      "e0": "1/100",
+      "e1": "49/50",
+      "states": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "stationary_rational": [
+        "999999/2000000",
+        "1/2000000",
+        "999999/2000000",
+        "1/2000000"
+      ],
+      "kernel_rational": [
+        [
+          "98999901/100000000",
+          "99/100000000",
+          "999999/100000000",
+          "1/100000000"
+        ],
+        [
+          "999999/50000000",
+          "1/50000000",
+          "48999951/50000000",
+          "49/50000000"
+        ],
+        [
+          "999999/100000000",
+          "1/100000000",
+          "98999901/100000000",
+          "99/100000000"
+        ],
+        [
+          "48999951/50000000",
+          "49/50000000",
+          "999999/50000000",
+          "1/50000000"
+        ]
+      ],
+      "observed_flip_probability": 0.01000097,
+      "macro": {
+        "cmi_bits": 6.369759959803788e-06,
+        "predictive_information_bits": 0.9192004336967223,
+        "micro_information_about_same_target_bits": 0.9192068034566822,
+        "prediction_retained_fraction": 0.9999930703733525,
+        "fiber_diameter_tv": 0.97,
+        "maximum_tv_to_observed_kernel": 0.96999903,
+        "average_tv_to_observed_kernel": 1.93999806e-06,
+        "strong_lumpability_exact": false,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.0000213742628887,
+        "entropy_ratio": 0.9999786261939606,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "99/100",
+            "1/100"
+          ],
+          [
+            "1/50",
+            "49/50"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "49/50",
+            "1/50"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "98999903/100000000",
+            "1000097/100000000"
+          ],
+          [
+            "1000097/100000000",
+            "98999903/100000000"
+          ]
+        ]
+      },
+      "meso": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.919206803456682,
+        "micro_information_about_same_target_bits": 0.919206803456682,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0000213742628887,
+        "micro_entropy_bits": 1.0000213742628887,
+        "entropy_ratio": 1.0,
+        "log_cardinality_ratio": 1.0,
+        "pushforward_kernel_rational": [
+          [
+            "98999901/100000000",
+            "99/100000000",
+            "999999/100000000",
+            "1/100000000"
+          ],
+          [
+            "999999/50000000",
+            "1/50000000",
+            "48999951/50000000",
+            "49/50000000"
+          ],
+          [
+            "999999/100000000",
+            "1/100000000",
+            "98999901/100000000",
+            "99/100000000"
+          ],
+          [
+            "48999951/50000000",
+            "49/50000000",
+            "999999/50000000",
+            "1/50000000"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "98999901/100000000",
+            "99/100000000",
+            "999999/100000000",
+            "1/100000000"
+          ],
+          [
+            "999999/50000000",
+            "1/50000000",
+            "48999951/50000000",
+            "49/50000000"
+          ],
+          [
+            "999999/100000000",
+            "1/100000000",
+            "98999901/100000000",
+            "99/100000000"
+          ],
+          [
+            "48999951/50000000",
+            "49/50000000",
+            "999999/50000000",
+            "1/50000000"
+          ]
+        ]
+      },
+      "same_capacity_parity": {
+        "cmi_bits": 5.645698295396349e-09,
+        "predictive_information_bits": 0.9192003011125786,
+        "micro_information_about_same_target_bits": 0.9192003067582768,
+        "prediction_retained_fraction": 0.9999999938580327,
+        "fiber_diameter_tv": 0.00999998,
+        "maximum_tv_to_observed_kernel": 0.00999997000002,
+        "average_tv_to_observed_kernel": 1.999994000004e-08,
+        "strong_lumpability_exact": false,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.0000213742628887,
+        "entropy_ratio": 0.9999786261939606,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "49499951/50000000",
+            "500049/50000000"
+          ],
+          [
+            "62503/3125000",
+            "3062497/3125000"
+          ],
+          [
+            "500049/50000000",
+            "49499951/50000000"
+          ],
+          [
+            "3062497/3125000",
+            "62503/3125000"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "49499950500001/50000000000000",
+            "500049499999/50000000000000"
+          ],
+          [
+            "500049499999/50000000000000",
+            "49499950500001/50000000000000"
+          ]
+        ]
+      },
+      "parity_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.91920679781053
+      },
+      "macro_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.9192004336967223
+      },
+      "all_binary_partitions": [
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 1.1187131624710315e-05,
+          "cmi_bits": 4.5960327515879526e-07,
+          "fiber_diameter_tv": 9.8e-07,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 4.2927989485352924e-07
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 0.9999999999992786,
+          "cmi_bits": 3.187697053757329e-06,
+          "fiber_diameter_tv": 0.96999903,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.9192036157543328
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 6.369759959803788e-06,
+          "fiber_diameter_tv": 0.97,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.9192004336967223
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "representation_entropy_bits": 1.1187131624710315e-05,
+          "cmi_bits": 4.5960327515879526e-07,
+          "fiber_diameter_tv": 9.8e-07,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 4.2927989485352924e-07
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 2.137426288890686e-05,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.0
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 5.645698295396349e-09,
+          "fiber_diameter_tv": 0.00999998,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.91920679781053
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 0.9999999999992786,
+          "cmi_bits": 3.187697053757329e-06,
+          "fiber_diameter_tv": 0.96999903,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.9192036157543328
+        }
+      ],
+      "causal_preparations": [
+        {
+          "prepare_A": 0,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 9.7e-07
+        },
+        {
+          "prepare_A": 0,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "1/50",
+            "49/50"
+          ],
+          "tv_to_observed_kernel": 0.96999903
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 9.7e-07
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "49/50",
+            "1/50"
+          ],
+          "tv_to_observed_kernel": 0.96999903
+        }
+      ],
+      "macro_paths_checked_exactly": 32
+    },
+    {
+      "name": "rare_hidden_driver",
+      "r": "1/2",
+      "e0": "1/100",
+      "e1": "99/100",
+      "states": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "stationary_rational": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "kernel_rational": [
+        [
+          "99/200",
+          "99/200",
+          "1/200",
+          "1/200"
+        ],
+        [
+          "1/200",
+          "1/200",
+          "99/200",
+          "99/200"
+        ],
+        [
+          "1/200",
+          "1/200",
+          "99/200",
+          "99/200"
+        ],
+        [
+          "99/200",
+          "99/200",
+          "1/200",
+          "1/200"
+        ]
+      ],
+      "observed_flip_probability": 0.5,
+      "macro": {
+        "cmi_bits": 0.9192068641040888,
+        "predictive_information_bits": 0.0,
+        "micro_information_about_same_target_bits": 0.9192068641040888,
+        "prediction_retained_fraction": 0.0,
+        "fiber_diameter_tv": 0.98,
+        "maximum_tv_to_observed_kernel": 0.49,
+        "average_tv_to_observed_kernel": 0.49,
+        "strong_lumpability_exact": false,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 2.0,
+        "entropy_ratio": 0.5,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "99/100",
+            "1/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "99/100",
+            "1/100"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ]
+        ]
+      },
+      "meso": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192068641040889,
+        "micro_information_about_same_target_bits": 0.9192068641040889,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 2.0,
+        "micro_entropy_bits": 2.0,
+        "entropy_ratio": 1.0,
+        "log_cardinality_ratio": 1.0,
+        "pushforward_kernel_rational": [
+          [
+            "99/200",
+            "99/200",
+            "1/200",
+            "1/200"
+          ],
+          [
+            "1/200",
+            "1/200",
+            "99/200",
+            "99/200"
+          ],
+          [
+            "1/200",
+            "1/200",
+            "99/200",
+            "99/200"
+          ],
+          [
+            "99/200",
+            "99/200",
+            "1/200",
+            "1/200"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "99/200",
+            "99/200",
+            "1/200",
+            "1/200"
+          ],
+          [
+            "1/200",
+            "1/200",
+            "99/200",
+            "99/200"
+          ],
+          [
+            "1/200",
+            "1/200",
+            "99/200",
+            "99/200"
+          ],
+          [
+            "99/200",
+            "99/200",
+            "1/200",
+            "1/200"
+          ]
+        ]
+      },
+      "same_capacity_parity": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.0,
+        "micro_information_about_same_target_bits": 0.0,
+        "prediction_retained_fraction": null,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 2.0,
+        "entropy_ratio": 0.5,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2"
+          ]
+        ]
+      },
+      "parity_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.9192068641040888
+      },
+      "macro_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.0
+      },
+      "all_binary_partitions": [
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 0.8112781244591328,
+          "cmi_bits": 0.17614750214486988,
+          "fiber_diameter_tv": 0.49,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.2886068462694049
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 0.8112781244591328,
+          "cmi_bits": 0.2177191226670679,
+          "fiber_diameter_tv": 0.49,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.2886068462694049
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.9192068641040888,
+          "fiber_diameter_tv": 0.98,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.0
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "representation_entropy_bits": 0.8112781244591328,
+          "cmi_bits": 0.17614750214486988,
+          "fiber_diameter_tv": 0.49,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.2886068462694049
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.0
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.9192068641040888
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 0.8112781244591328,
+          "cmi_bits": 0.2177191226670679,
+          "fiber_diameter_tv": 0.49,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.2886068462694049
+        }
+      ],
+      "causal_preparations": [
+        {
+          "prepare_A": 0,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 0.49
+        },
+        {
+          "prepare_A": 0,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 0.49
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 0.49
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 0.49
+        }
+      ],
+      "macro_paths_checked_exactly": 32
+    },
+    {
+      "name": "rare_hidden_driver",
+      "r": "1/10",
+      "e0": "1/100",
+      "e1": "99/100",
+      "states": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "stationary_rational": [
+        "9/20",
+        "1/20",
+        "9/20",
+        "1/20"
+      ],
+      "kernel_rational": [
+        [
+          "891/1000",
+          "99/1000",
+          "9/1000",
+          "1/1000"
+        ],
+        [
+          "9/1000",
+          "1/1000",
+          "891/1000",
+          "99/1000"
+        ],
+        [
+          "9/1000",
+          "1/1000",
+          "891/1000",
+          "99/1000"
+        ],
+        [
+          "891/1000",
+          "99/1000",
+          "9/1000",
+          "1/1000"
+        ]
+      ],
+      "observed_flip_probability": 0.108,
+      "macro": {
+        "cmi_bits": 0.41306058780360944,
+        "predictive_information_bits": 0.5061462763004794,
+        "micro_information_about_same_target_bits": 0.9192068641040888,
+        "prediction_retained_fraction": 0.5506336996229878,
+        "fiber_diameter_tv": 0.98,
+        "maximum_tv_to_observed_kernel": 0.882,
+        "average_tv_to_observed_kernel": 0.1764,
+        "strong_lumpability_exact": false,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.4689955935892813,
+        "entropy_ratio": 0.6807372359481642,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "99/100",
+            "1/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "99/100",
+            "1/100"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "223/250",
+            "27/250"
+          ],
+          [
+            "27/250",
+            "223/250"
+          ]
+        ]
+      },
+      "meso": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192068641040889,
+        "micro_information_about_same_target_bits": 0.9192068641040889,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.4689955935892813,
+        "micro_entropy_bits": 1.4689955935892813,
+        "entropy_ratio": 1.0,
+        "log_cardinality_ratio": 1.0,
+        "pushforward_kernel_rational": [
+          [
+            "891/1000",
+            "99/1000",
+            "9/1000",
+            "1/1000"
+          ],
+          [
+            "9/1000",
+            "1/1000",
+            "891/1000",
+            "99/1000"
+          ],
+          [
+            "9/1000",
+            "1/1000",
+            "891/1000",
+            "99/1000"
+          ],
+          [
+            "891/1000",
+            "99/1000",
+            "9/1000",
+            "1/1000"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "891/1000",
+            "99/1000",
+            "9/1000",
+            "1/1000"
+          ],
+          [
+            "9/1000",
+            "1/1000",
+            "891/1000",
+            "99/1000"
+          ],
+          [
+            "9/1000",
+            "1/1000",
+            "891/1000",
+            "99/1000"
+          ],
+          [
+            "891/1000",
+            "99/1000",
+            "9/1000",
+            "1/1000"
+          ]
+        ]
+      },
+      "same_capacity_parity": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.5061462763004794,
+        "micro_information_about_same_target_bits": 0.5061462763004794,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.4689955935892813,
+        "entropy_ratio": 0.6807372359481642,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "223/250",
+            "27/250"
+          ],
+          [
+            "27/250",
+            "223/250"
+          ],
+          [
+            "27/250",
+            "223/250"
+          ],
+          [
+            "223/250",
+            "27/250"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "223/250",
+            "27/250"
+          ],
+          [
+            "27/250",
+            "223/250"
+          ]
+        ]
+      },
+      "parity_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.9192068641040888
+      },
+      "macro_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.5061462763004794
+      },
+      "all_binary_partitions": [
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 0.28639695711595625,
+          "cmi_bits": 0.044347796285181165,
+          "fiber_diameter_tv": 0.098,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.04778426337412178
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 0.9927744539878083,
+          "cmi_bits": 0.17666430106311345,
+          "fiber_diameter_tv": 0.882,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.7072841279014752
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.41306058780360944,
+          "fiber_diameter_tv": 0.98,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.5061462763004794
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "representation_entropy_bits": 0.28639695711595625,
+          "cmi_bits": 0.044347796285181165,
+          "fiber_diameter_tv": 0.098,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.04778426337412178
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 0.4689955935892812,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.0
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.9192068641040888
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 0.9927744539878083,
+          "cmi_bits": 0.17666430106311345,
+          "fiber_diameter_tv": 0.882,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.7072841279014752
+        }
+      ],
+      "causal_preparations": [
+        {
+          "prepare_A": 0,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 0.098
+        },
+        {
+          "prepare_A": 0,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 0.882
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 0.098
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 0.882
+        }
+      ],
+      "macro_paths_checked_exactly": 32
+    },
+    {
+      "name": "rare_hidden_driver",
+      "r": "1/100",
+      "e0": "1/100",
+      "e1": "99/100",
+      "states": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "stationary_rational": [
+        "99/200",
+        "1/200",
+        "99/200",
+        "1/200"
+      ],
+      "kernel_rational": [
+        [
+          "9801/10000",
+          "99/10000",
+          "99/10000",
+          "1/10000"
+        ],
+        [
+          "99/10000",
+          "1/10000",
+          "9801/10000",
+          "99/10000"
+        ],
+        [
+          "99/10000",
+          "1/10000",
+          "9801/10000",
+          "99/10000"
+        ],
+        [
+          "9801/10000",
+          "99/10000",
+          "99/10000",
+          "1/10000"
+        ]
+      ],
+      "observed_flip_probability": 0.0198,
+      "macro": {
+        "cmi_bits": 0.059522987708118744,
+        "predictive_information_bits": 0.8596838763959701,
+        "micro_information_about_same_target_bits": 0.9192068641040888,
+        "prediction_retained_fraction": 0.9352452749946192,
+        "fiber_diameter_tv": 0.98,
+        "maximum_tv_to_observed_kernel": 0.9702,
+        "average_tv_to_observed_kernel": 0.019404,
+        "strong_lumpability_exact": false,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.080793135895911,
+        "entropy_ratio": 0.9252464387378455,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "99/100",
+            "1/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "99/100",
+            "1/100"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "4901/5000",
+            "99/5000"
+          ],
+          [
+            "99/5000",
+            "4901/5000"
+          ]
+        ]
+      },
+      "meso": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192068641040887,
+        "micro_information_about_same_target_bits": 0.9192068641040887,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.080793135895911,
+        "micro_entropy_bits": 1.080793135895911,
+        "entropy_ratio": 1.0,
+        "log_cardinality_ratio": 1.0,
+        "pushforward_kernel_rational": [
+          [
+            "9801/10000",
+            "99/10000",
+            "99/10000",
+            "1/10000"
+          ],
+          [
+            "99/10000",
+            "1/10000",
+            "9801/10000",
+            "99/10000"
+          ],
+          [
+            "99/10000",
+            "1/10000",
+            "9801/10000",
+            "99/10000"
+          ],
+          [
+            "9801/10000",
+            "99/10000",
+            "99/10000",
+            "1/10000"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "9801/10000",
+            "99/10000",
+            "99/10000",
+            "1/10000"
+          ],
+          [
+            "99/10000",
+            "1/10000",
+            "9801/10000",
+            "99/10000"
+          ],
+          [
+            "99/10000",
+            "1/10000",
+            "9801/10000",
+            "99/10000"
+          ],
+          [
+            "9801/10000",
+            "99/10000",
+            "99/10000",
+            "1/10000"
+          ]
+        ]
+      },
+      "same_capacity_parity": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.8596838763959701,
+        "micro_information_about_same_target_bits": 0.8596838763959701,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.080793135895911,
+        "entropy_ratio": 0.9252464387378455,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "4901/5000",
+            "99/5000"
+          ],
+          [
+            "99/5000",
+            "4901/5000"
+          ],
+          [
+            "99/5000",
+            "4901/5000"
+          ],
+          [
+            "4901/5000",
+            "99/5000"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "4901/5000",
+            "99/5000"
+          ],
+          [
+            "99/5000",
+            "4901/5000"
+          ]
+        ]
+      },
+      "parity_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.9192068641040888
+      },
+      "macro_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.8596838763959701
+      },
+      "all_binary_partitions": [
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 0.0454146923337941,
+          "cmi_bits": 0.00458074265918247,
+          "fiber_diameter_tv": 0.0098,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.0046134409777786045
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 0.9999278640456615,
+          "cmi_bits": 0.029252902037453676,
+          "fiber_diameter_tv": 0.9702,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.8894237779935202
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.059522987708118744,
+          "fiber_diameter_tv": 0.98,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.8596838763959701
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "representation_entropy_bits": 0.0454146923337941,
+          "cmi_bits": 0.00458074265918247,
+          "fiber_diameter_tv": 0.0098,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.0046134409777786045
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 0.08079313589591118,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.0
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.9192068641040888
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 0.9999278640456615,
+          "cmi_bits": 0.029252902037453676,
+          "fiber_diameter_tv": 0.9702,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.8894237779935202
+        }
+      ],
+      "causal_preparations": [
+        {
+          "prepare_A": 0,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 0.0098
+        },
+        {
+          "prepare_A": 0,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 0.9702
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 0.0098
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 0.9702
+        }
+      ],
+      "macro_paths_checked_exactly": 32
+    },
+    {
+      "name": "rare_hidden_driver",
+      "r": "1/1000",
+      "e0": "1/100",
+      "e1": "99/100",
+      "states": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "stationary_rational": [
+        "999/2000",
+        "1/2000",
+        "999/2000",
+        "1/2000"
+      ],
+      "kernel_rational": [
+        [
+          "98901/100000",
+          "99/100000",
+          "999/100000",
+          "1/100000"
+        ],
+        [
+          "999/100000",
+          "1/100000",
+          "98901/100000",
+          "99/100000"
+        ],
+        [
+          "999/100000",
+          "1/100000",
+          "98901/100000",
+          "99/100000"
+        ],
+        [
+          "98901/100000",
+          "99/100000",
+          "999/100000",
+          "1/100000"
+        ]
+      ],
+      "observed_flip_probability": 0.01098,
+      "macro": {
+        "cmi_bits": 0.006428949580085512,
+        "predictive_information_bits": 0.9127779145240034,
+        "micro_information_about_same_target_bits": 0.9192068641040888,
+        "prediction_retained_fraction": 0.9930059817532461,
+        "fiber_diameter_tv": 0.98,
+        "maximum_tv_to_observed_kernel": 0.97902,
+        "average_tv_to_observed_kernel": 0.00195804,
+        "strong_lumpability_exact": false,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.011407757737461,
+        "entropy_ratio": 0.9887209113730941,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "99/100",
+            "1/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "99/100",
+            "1/100"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "49451/50000",
+            "549/50000"
+          ],
+          [
+            "549/50000",
+            "49451/50000"
+          ]
+        ]
+      },
+      "meso": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192068641040886,
+        "micro_information_about_same_target_bits": 0.9192068641040886,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.011407757737461,
+        "micro_entropy_bits": 1.011407757737461,
+        "entropy_ratio": 1.0,
+        "log_cardinality_ratio": 1.0,
+        "pushforward_kernel_rational": [
+          [
+            "98901/100000",
+            "99/100000",
+            "999/100000",
+            "1/100000"
+          ],
+          [
+            "999/100000",
+            "1/100000",
+            "98901/100000",
+            "99/100000"
+          ],
+          [
+            "999/100000",
+            "1/100000",
+            "98901/100000",
+            "99/100000"
+          ],
+          [
+            "98901/100000",
+            "99/100000",
+            "999/100000",
+            "1/100000"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "98901/100000",
+            "99/100000",
+            "999/100000",
+            "1/100000"
+          ],
+          [
+            "999/100000",
+            "1/100000",
+            "98901/100000",
+            "99/100000"
+          ],
+          [
+            "999/100000",
+            "1/100000",
+            "98901/100000",
+            "99/100000"
+          ],
+          [
+            "98901/100000",
+            "99/100000",
+            "999/100000",
+            "1/100000"
+          ]
+        ]
+      },
+      "same_capacity_parity": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9127779145240034,
+        "micro_information_about_same_target_bits": 0.9127779145240034,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.011407757737461,
+        "entropy_ratio": 0.9887209113730941,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "49451/50000",
+            "549/50000"
+          ],
+          [
+            "549/50000",
+            "49451/50000"
+          ],
+          [
+            "549/50000",
+            "49451/50000"
+          ],
+          [
+            "49451/50000",
+            "549/50000"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "49451/50000",
+            "549/50000"
+          ],
+          [
+            "549/50000",
+            "49451/50000"
+          ]
+        ]
+      },
+      "parity_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.9192068641040888
+      },
+      "macro_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.9127779145240034
+      },
+      "all_binary_partitions": [
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 0.006204059295831671,
+          "cmi_bits": 0.00045945129993850946,
+          "fiber_diameter_tv": 0.00098,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.00045977671423969024
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 0.9999992786523593,
+          "cmi_bits": 0.003208727097184963,
+          "fiber_diameter_tv": 0.97902,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.9159923564654935
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.006428949580085512,
+          "fiber_diameter_tv": 0.98,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.9127779145240034
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "representation_entropy_bits": 0.006204059295831671,
+          "cmi_bits": 0.00045945129993850946,
+          "fiber_diameter_tv": 0.00098,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.00045977671423969024
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 0.011407757737461138,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.0
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.9192068641040888
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 0.9999992786523593,
+          "cmi_bits": 0.003208727097184963,
+          "fiber_diameter_tv": 0.97902,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.9159923564654935
+        }
+      ],
+      "causal_preparations": [
+        {
+          "prepare_A": 0,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 0.00098
+        },
+        {
+          "prepare_A": 0,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 0.97902
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 0.00098
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 0.97902
+        }
+      ],
+      "macro_paths_checked_exactly": 32
+    },
+    {
+      "name": "rare_hidden_driver",
+      "r": "1/10000",
+      "e0": "1/100",
+      "e1": "99/100",
+      "states": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "stationary_rational": [
+        "9999/20000",
+        "1/20000",
+        "9999/20000",
+        "1/20000"
+      ],
+      "kernel_rational": [
+        [
+          "989901/1000000",
+          "99/1000000",
+          "9999/1000000",
+          "1/1000000"
+        ],
+        [
+          "9999/1000000",
+          "1/1000000",
+          "989901/1000000",
+          "99/1000000"
+        ],
+        [
+          "9999/1000000",
+          "1/1000000",
+          "989901/1000000",
+          "99/1000000"
+        ],
+        [
+          "989901/1000000",
+          "99/1000000",
+          "9999/1000000",
+          "1/1000000"
+        ]
+      ],
+      "observed_flip_probability": 0.010098,
+      "macro": {
+        "cmi_bits": 0.0006489794206425462,
+        "predictive_information_bits": 0.918557884683446,
+        "micro_information_about_same_target_bits": 0.9192068641040888,
+        "prediction_retained_fraction": 0.9992939789224972,
+        "fiber_diameter_tv": 0.98,
+        "maximum_tv_to_observed_kernel": 0.979902,
+        "average_tv_to_observed_kernel": 0.0001959804,
+        "strong_lumpability_exact": false,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.0014730335283284,
+        "entropy_ratio": 0.9985291331079194,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "99/100",
+            "1/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "99/100",
+            "1/100"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "494951/500000",
+            "5049/500000"
+          ],
+          [
+            "5049/500000",
+            "494951/500000"
+          ]
+        ]
+      },
+      "meso": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192068641040891,
+        "micro_information_about_same_target_bits": 0.9192068641040891,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0014730335283284,
+        "micro_entropy_bits": 1.0014730335283284,
+        "entropy_ratio": 1.0,
+        "log_cardinality_ratio": 1.0,
+        "pushforward_kernel_rational": [
+          [
+            "989901/1000000",
+            "99/1000000",
+            "9999/1000000",
+            "1/1000000"
+          ],
+          [
+            "9999/1000000",
+            "1/1000000",
+            "989901/1000000",
+            "99/1000000"
+          ],
+          [
+            "9999/1000000",
+            "1/1000000",
+            "989901/1000000",
+            "99/1000000"
+          ],
+          [
+            "989901/1000000",
+            "99/1000000",
+            "9999/1000000",
+            "1/1000000"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "989901/1000000",
+            "99/1000000",
+            "9999/1000000",
+            "1/1000000"
+          ],
+          [
+            "9999/1000000",
+            "1/1000000",
+            "989901/1000000",
+            "99/1000000"
+          ],
+          [
+            "9999/1000000",
+            "1/1000000",
+            "989901/1000000",
+            "99/1000000"
+          ],
+          [
+            "989901/1000000",
+            "99/1000000",
+            "9999/1000000",
+            "1/1000000"
+          ]
+        ]
+      },
+      "same_capacity_parity": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.918557884683446,
+        "micro_information_about_same_target_bits": 0.918557884683446,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.0014730335283284,
+        "entropy_ratio": 0.9985291331079194,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "494951/500000",
+            "5049/500000"
+          ],
+          [
+            "5049/500000",
+            "494951/500000"
+          ],
+          [
+            "5049/500000",
+            "494951/500000"
+          ],
+          [
+            "494951/500000",
+            "5049/500000"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "494951/500000",
+            "5049/500000"
+          ],
+          [
+            "5049/500000",
+            "494951/500000"
+          ]
+        ]
+      },
+      "parity_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.9192068641040888
+      },
+      "macro_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.918557884683446
+      },
+      "all_binary_partitions": [
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 0.0007865185676230547,
+          "cmi_bits": 4.5958822663932205e-05,
+          "fiber_diameter_tv": 9.8e-05,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 4.596207524731888e-05
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 0.9999999927865248,
+          "cmi_bits": 0.00032443132551612287,
+          "fiber_diameter_tv": 0.979902,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.9188823743590065
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.0006489794206425462,
+          "fiber_diameter_tv": 0.98,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.918557884683446
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "representation_entropy_bits": 0.0007865185676230547,
+          "cmi_bits": 4.5958822663932205e-05,
+          "fiber_diameter_tv": 9.8e-05,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 4.596207524731888e-05
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 0.0014730335283281598,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.0
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.9192068641040888
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 0.9999999927865248,
+          "cmi_bits": 0.00032443132551612287,
+          "fiber_diameter_tv": 0.979902,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.9188823743590065
+        }
+      ],
+      "causal_preparations": [
+        {
+          "prepare_A": 0,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 9.8e-05
+        },
+        {
+          "prepare_A": 0,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 0.979902
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 9.8e-05
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 0.979902
+        }
+      ],
+      "macro_paths_checked_exactly": 32
+    },
+    {
+      "name": "rare_hidden_driver",
+      "r": "1/100000",
+      "e0": "1/100",
+      "e1": "99/100",
+      "states": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "stationary_rational": [
+        "99999/200000",
+        "1/200000",
+        "99999/200000",
+        "1/200000"
+      ],
+      "kernel_rational": [
+        [
+          "9899901/10000000",
+          "99/10000000",
+          "99999/10000000",
+          "1/10000000"
+        ],
+        [
+          "99999/10000000",
+          "1/10000000",
+          "9899901/10000000",
+          "99/10000000"
+        ],
+        [
+          "99999/10000000",
+          "1/10000000",
+          "9899901/10000000",
+          "99/10000000"
+        ],
+        [
+          "9899901/10000000",
+          "99/10000000",
+          "99999/10000000",
+          "1/10000000"
+        ]
+      ],
+      "observed_flip_probability": 0.0100098,
+      "macro": {
+        "cmi_bits": 6.49606993390944e-05,
+        "predictive_information_bits": 0.91914190340475,
+        "micro_information_about_same_target_bits": 0.9192068641040888,
+        "prediction_retained_fraction": 0.9999293296189622,
+        "fiber_diameter_tv": 0.98,
+        "maximum_tv_to_observed_kernel": 0.9799902,
+        "average_tv_to_observed_kernel": 1.9599804e-05,
+        "strong_lumpability_exact": false,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.000180523283018,
+        "entropy_ratio": 0.9998195092997557,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "99/100",
+            "1/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "99/100",
+            "1/100"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "4949951/5000000",
+            "50049/5000000"
+          ],
+          [
+            "50049/5000000",
+            "4949951/5000000"
+          ]
+        ]
+      },
+      "meso": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192068641040886,
+        "micro_information_about_same_target_bits": 0.9192068641040886,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.000180523283018,
+        "micro_entropy_bits": 1.000180523283018,
+        "entropy_ratio": 1.0,
+        "log_cardinality_ratio": 1.0,
+        "pushforward_kernel_rational": [
+          [
+            "9899901/10000000",
+            "99/10000000",
+            "99999/10000000",
+            "1/10000000"
+          ],
+          [
+            "99999/10000000",
+            "1/10000000",
+            "9899901/10000000",
+            "99/10000000"
+          ],
+          [
+            "99999/10000000",
+            "1/10000000",
+            "9899901/10000000",
+            "99/10000000"
+          ],
+          [
+            "9899901/10000000",
+            "99/10000000",
+            "99999/10000000",
+            "1/10000000"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "9899901/10000000",
+            "99/10000000",
+            "99999/10000000",
+            "1/10000000"
+          ],
+          [
+            "99999/10000000",
+            "1/10000000",
+            "9899901/10000000",
+            "99/10000000"
+          ],
+          [
+            "99999/10000000",
+            "1/10000000",
+            "9899901/10000000",
+            "99/10000000"
+          ],
+          [
+            "9899901/10000000",
+            "99/10000000",
+            "99999/10000000",
+            "1/10000000"
+          ]
+        ]
+      },
+      "same_capacity_parity": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.91914190340475,
+        "micro_information_about_same_target_bits": 0.91914190340475,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.000180523283018,
+        "entropy_ratio": 0.9998195092997557,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "4949951/5000000",
+            "50049/5000000"
+          ],
+          [
+            "50049/5000000",
+            "4949951/5000000"
+          ],
+          [
+            "50049/5000000",
+            "4949951/5000000"
+          ],
+          [
+            "4949951/5000000",
+            "50049/5000000"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "4949951/5000000",
+            "50049/5000000"
+          ],
+          [
+            "50049/5000000",
+            "4949951/5000000"
+          ]
+        ]
+      },
+      "parity_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.9192068641040888
+      },
+      "macro_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.91914190340475
+      },
+      "all_binary_partitions": [
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 9.526165954295807e-05,
+          "cmi_bits": 4.596019115953311e-06,
+          "fiber_diameter_tv": 9.8e-06,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 4.5960516401599705e-06
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 0.9999999999278651,
+          "cmi_bits": 3.2479764874926943e-05,
+          "fiber_diameter_tv": 0.9799902,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.9191743837543843
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 6.49606993390944e-05,
+          "fiber_diameter_tv": 0.98,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.91914190340475
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "representation_entropy_bits": 9.526165954295807e-05,
+          "cmi_bits": 4.596019115953311e-06,
+          "fiber_diameter_tv": 9.8e-06,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 4.5960516401599705e-06
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 0.00018052328301819962,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.0
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.9192068641040888
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 0.9999999999278651,
+          "cmi_bits": 3.2479764874926943e-05,
+          "fiber_diameter_tv": 0.9799902,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.9191743837543843
+        }
+      ],
+      "causal_preparations": [
+        {
+          "prepare_A": 0,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 9.8e-06
+        },
+        {
+          "prepare_A": 0,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 0.9799902
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 9.8e-06
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 0.9799902
+        }
+      ],
+      "macro_paths_checked_exactly": 32
+    },
+    {
+      "name": "rare_hidden_driver",
+      "r": "1/1000000",
+      "e0": "1/100",
+      "e1": "99/100",
+      "states": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "stationary_rational": [
+        "999999/2000000",
+        "1/2000000",
+        "999999/2000000",
+        "1/2000000"
+      ],
+      "kernel_rational": [
+        [
+          "98999901/100000000",
+          "99/100000000",
+          "999999/100000000",
+          "1/100000000"
+        ],
+        [
+          "999999/100000000",
+          "1/100000000",
+          "98999901/100000000",
+          "99/100000000"
+        ],
+        [
+          "999999/100000000",
+          "1/100000000",
+          "98999901/100000000",
+          "99/100000000"
+        ],
+        [
+          "98999901/100000000",
+          "99/100000000",
+          "999999/100000000",
+          "1/100000000"
+        ]
+      ],
+      "observed_flip_probability": 0.01000098,
+      "macro": {
+        "cmi_bits": 6.49669951190467e-06,
+        "predictive_information_bits": 0.9192003674045768,
+        "micro_information_about_same_target_bits": 0.9192068641040888,
+        "prediction_retained_fraction": 0.9999929322769817,
+        "fiber_diameter_tv": 0.98,
+        "maximum_tv_to_observed_kernel": 0.97999902,
+        "average_tv_to_observed_kernel": 1.95999804e-06,
+        "strong_lumpability_exact": false,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.0000213742628887,
+        "entropy_ratio": 0.9999786261939606,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "99/100",
+            "1/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "1/100",
+            "99/100"
+          ],
+          [
+            "99/100",
+            "1/100"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "49499951/50000000",
+            "500049/50000000"
+          ],
+          [
+            "500049/50000000",
+            "49499951/50000000"
+          ]
+        ]
+      },
+      "meso": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192068641040887,
+        "micro_information_about_same_target_bits": 0.9192068641040887,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0000213742628887,
+        "micro_entropy_bits": 1.0000213742628887,
+        "entropy_ratio": 1.0,
+        "log_cardinality_ratio": 1.0,
+        "pushforward_kernel_rational": [
+          [
+            "98999901/100000000",
+            "99/100000000",
+            "999999/100000000",
+            "1/100000000"
+          ],
+          [
+            "999999/100000000",
+            "1/100000000",
+            "98999901/100000000",
+            "99/100000000"
+          ],
+          [
+            "999999/100000000",
+            "1/100000000",
+            "98999901/100000000",
+            "99/100000000"
+          ],
+          [
+            "98999901/100000000",
+            "99/100000000",
+            "999999/100000000",
+            "1/100000000"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "98999901/100000000",
+            "99/100000000",
+            "999999/100000000",
+            "1/100000000"
+          ],
+          [
+            "999999/100000000",
+            "1/100000000",
+            "98999901/100000000",
+            "99/100000000"
+          ],
+          [
+            "999999/100000000",
+            "1/100000000",
+            "98999901/100000000",
+            "99/100000000"
+          ],
+          [
+            "98999901/100000000",
+            "99/100000000",
+            "999999/100000000",
+            "1/100000000"
+          ]
+        ]
+      },
+      "same_capacity_parity": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192003674045768,
+        "micro_information_about_same_target_bits": 0.9192003674045768,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "maximum_tv_to_observed_kernel": 0.0,
+        "average_tv_to_observed_kernel": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 1.0000213742628887,
+        "entropy_ratio": 0.9999786261939606,
+        "log_cardinality_ratio": 0.5,
+        "pushforward_kernel_rational": [
+          [
+            "49499951/50000000",
+            "500049/50000000"
+          ],
+          [
+            "500049/50000000",
+            "49499951/50000000"
+          ],
+          [
+            "500049/50000000",
+            "49499951/50000000"
+          ],
+          [
+            "49499951/50000000",
+            "500049/50000000"
+          ]
+        ],
+        "observed_kernel_rational": [
+          [
+            "49499951/50000000",
+            "500049/50000000"
+          ],
+          [
+            "500049/50000000",
+            "49499951/50000000"
+          ]
+        ]
+      },
+      "parity_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.9192068641040888
+      },
+      "macro_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.9192003674045768
+      },
+      "all_binary_partitions": [
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 1.1187131624710315e-05,
+          "cmi_bits": 4.5960327996388394e-07,
+          "fiber_diameter_tv": 9.8e-07,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 4.5960360517405263e-07
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 0.9999999999992786,
+          "cmi_bits": 3.2483439070972483e-06,
+          "fiber_diameter_tv": 0.97999902,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.9192036157543328
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 6.49669951190467e-06,
+          "fiber_diameter_tv": 0.98,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.9192003674045768
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "representation_entropy_bits": 1.1187131624710315e-05,
+          "cmi_bits": 4.5960327996388394e-07,
+          "fiber_diameter_tv": 9.8e-07,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 4.5960360517405263e-07
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "representation_entropy_bits": 2.137426288890686e-05,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.0
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "representation_entropy_bits": 1.0,
+          "cmi_bits": 0.0,
+          "fiber_diameter_tv": 0.0,
+          "strong_lumpability_exact": true,
+          "target": "A_next",
+          "information_bits": 0.9192068641040888
+        },
+        {
+          "labels_in_state_order": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "representation_entropy_bits": 0.9999999999992786,
+          "cmi_bits": 3.2483439070972483e-06,
+          "fiber_diameter_tv": 0.97999902,
+          "strong_lumpability_exact": false,
+          "target": "A_next",
+          "information_bits": 0.9192036157543328
+        }
+      ],
+      "causal_preparations": [
+        {
+          "prepare_A": 0,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 9.8e-07
+        },
+        {
+          "prepare_A": 0,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 0.97999902
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 0,
+          "next_Y_distribution_rational": [
+            "1/100",
+            "99/100"
+          ],
+          "tv_to_observed_kernel": 9.8e-07
+        },
+        {
+          "prepare_A": 1,
+          "prepare_B": 1,
+          "next_Y_distribution_rational": [
+            "99/100",
+            "1/100"
+          ],
+          "tv_to_observed_kernel": 0.97999902
+        }
+      ],
+      "macro_paths_checked_exactly": 32
+    }
+  ],
+  "padding_checks": [
+    {
+      "case": "independent_exact_control",
+      "noise_bits": 6,
+      "microstates": 256,
+      "transitions": 65536,
+      "macro": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192068641040888,
+        "micro_information_about_same_target_bits": 0.9192068641040888,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 8.0,
+        "entropy_ratio": 0.125,
+        "log_cardinality_ratio": 0.125
+      },
+      "meso": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192068641040889,
+        "micro_information_about_same_target_bits": 0.9192068641040889,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 2.0,
+        "micro_entropy_bits": 8.0,
+        "entropy_ratio": 0.25,
+        "log_cardinality_ratio": 0.25
+      },
+      "parity": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.0,
+        "micro_information_about_same_target_bits": 0.0,
+        "prediction_retained_fraction": null,
+        "fiber_diameter_tv": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 8.0,
+        "entropy_ratio": 0.125,
+        "log_cardinality_ratio": 0.125
+      },
+      "parity_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.0
+      },
+      "full_micro_one_step_predictive_information_bits": 0.9192068641040896
+    },
+    {
+      "case": "rare_hidden_driver",
+      "noise_bits": 6,
+      "microstates": 256,
+      "transitions": 65536,
+      "macro": {
+        "cmi_bits": 6.49669951190467e-06,
+        "predictive_information_bits": 0.9192003674045768,
+        "micro_information_about_same_target_bits": 0.9192068641040888,
+        "prediction_retained_fraction": 0.9999929322769817,
+        "fiber_diameter_tv": 0.98,
+        "strong_lumpability_exact": false,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 7.0000213742628885,
+        "entropy_ratio": 0.1428567066490281,
+        "log_cardinality_ratio": 0.125
+      },
+      "meso": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192068641040887,
+        "micro_information_about_same_target_bits": 0.9192068641040887,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0000213742628887,
+        "micro_entropy_bits": 7.0000213742628885,
+        "entropy_ratio": 0.14285976010583143,
+        "log_cardinality_ratio": 0.25
+      },
+      "parity": {
+        "cmi_bits": 0.0,
+        "predictive_information_bits": 0.9192003674045768,
+        "micro_information_about_same_target_bits": 0.9192003674045768,
+        "prediction_retained_fraction": 1.0,
+        "fiber_diameter_tv": 0.0,
+        "strong_lumpability_exact": true,
+        "macro_entropy_bits": 1.0,
+        "micro_entropy_bits": 7.0000213742628885,
+        "entropy_ratio": 0.1428567066490281,
+        "log_cardinality_ratio": 0.125
+      },
+      "parity_fixed_target": {
+        "target": "A_next",
+        "information_bits": 0.9192068641040888
+      },
+      "full_micro_one_step_predictive_information_bits": 0.9192068641040887
+    }
+  ],
+  "checks": {
+    "positive_stochastic_kernels_and_stationarity": "PASS (rational equality)",
+    "closed_form_vs_generic_metrics": "PASS (1e-12 tolerance)",
+    "all_32_macro_paths_per_base_case": "PASS (rational equality)",
+    "same_fiber_causal_preparations": "PASS (rational equality)",
+    "retaining_B_restores_closure": "PASS (rational equality)",
+    "same_capacity_parity_restores_closure_and_target_sufficiency": "PASS",
+    "all_seven_binary_partitions_per_base_case": "PASS",
+    "parity_success_depends_on_complementary_noise": "PASS",
+    "explicit_noise_padding": "PASS (two 256-state models)",
+    "average_pinsker_bound": "PASS"
+  },
+  "reproducibility": {
+    "python": "3.12.14",
+    "source_sha256": "340225d1b5d26727f94c6cd3f809b859fb2aa276a25ad91f3ddf8ef50a9d9466"
+  }
+}

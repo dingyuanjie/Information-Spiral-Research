@@ -1,0 +1,174 @@
+{
+  "audit_date": "2026-09-11",
+  "scope": "Four historical finite enumerations reproduced; IST v0_5_1 read-only audit, no GPU rerun",
+  "historical": [
+    {
+      "script_sha256": "90d9e4091b73a13c7c09c51631db0017e9f3f6aeef6240dea2421737b13c1852",
+      "results": "D:\\code\\Information-Spiral-Research\\experiments\\minimal_core\\history_prior_results.json",
+      "script": "D:\\code\\Information-Spiral-Research\\experiments\\minimal_core\\history_prior_enumeration.py",
+      "original_sha256": "84eafe9ab05610c8ccfacfa3264d772c18c58db052ff5d4d040d5b5700c6d7b7",
+      "rerun_sha256": "84eafe9ab05610c8ccfacfa3264d772c18c58db052ff5d4d040d5b5700c6d7b7",
+      "byte_equal": true
+    },
+    {
+      "script_sha256": "a5195ca1197b93b0ba249c8643d1758dd7e3cdba47c66b63135b9b0e7f1862c8",
+      "results": "D:\\code\\Information-Spiral-Research\\experiments\\minimal_core\\misspecification_results.json",
+      "script": "D:\\code\\Information-Spiral-Research\\experiments\\minimal_core\\misspecification_enumeration.py",
+      "original_sha256": "8c8b689719fdd9a64982543487bc2cfd5244ae6fccbe630cbba57f4a5a3a5cb2",
+      "rerun_sha256": "8c8b689719fdd9a64982543487bc2cfd5244ae6fccbe630cbba57f4a5a3a5cb2",
+      "byte_equal": true
+    },
+    {
+      "script_sha256": "5ccdd0bc05074dad78ad5bc1ef3680a249b0690eea5a376cdb175f2f795b5ee3",
+      "results": "D:\\code\\Information-Spiral-Research\\experiments\\minimal_core\\phase_memory_results.json",
+      "script": "D:\\code\\Information-Spiral-Research\\experiments\\minimal_core\\phase_memory_enumeration.py",
+      "original_sha256": "dff45a61d0f1a935d0632ed0da8449938dbcf070c8b67d2e523540c15b191918",
+      "rerun_sha256": "dff45a61d0f1a935d0632ed0da8449938dbcf070c8b67d2e523540c15b191918",
+      "byte_equal": true
+    },
+    {
+      "script_sha256": "7b964352434bd47369e817c33cc2475efdf2ea80f8267bf62326598402ca2ed7",
+      "results": "D:\\code\\Information-Spiral-Research\\experiments\\minimal_core\\sample_efficiency_results.json",
+      "script": "D:\\code\\Information-Spiral-Research\\experiments\\minimal_core\\sample_efficiency_enumeration.py",
+      "original_sha256": "577e1a9d907288d5452bc47d7d3a7b3dc4635573642bf5ab22d2010c93e41634",
+      "rerun_sha256": "577e1a9d907288d5452bc47d7d3a7b3dc4635573642bf5ab22d2010c93e41634",
+      "byte_equal": true
+    }
+  ],
+  "ist": {
+    "stable_capacity_32": [
+      {
+        "capacity": 12,
+        "accuracy": 0.2890625,
+        "exact_target_retention": 0.1953125,
+        "seed": 505
+      },
+      {
+        "capacity": 64,
+        "accuracy": 0.59375,
+        "exact_target_retention": 1.0,
+        "seed": 505
+      },
+      {
+        "capacity": 12,
+        "accuracy": 0.4140625,
+        "exact_target_retention": 0.171875,
+        "seed": 1505
+      },
+      {
+        "capacity": 64,
+        "accuracy": 0.609375,
+        "exact_target_retention": 1.0,
+        "seed": 1505
+      },
+      {
+        "capacity": 12,
+        "accuracy": 0.2734375,
+        "exact_target_retention": 0.1875,
+        "seed": 2505
+      },
+      {
+        "capacity": 64,
+        "accuracy": 0.5625,
+        "exact_target_retention": 1.0,
+        "seed": 2505
+      },
+      {
+        "capacity": 12,
+        "accuracy": 0.234375,
+        "exact_target_retention": 0.125,
+        "seed": 3505
+      },
+      {
+        "capacity": 64,
+        "accuracy": 0.671875,
+        "exact_target_retention": 1.0,
+        "seed": 3505
+      },
+      {
+        "capacity": 12,
+        "accuracy": 0.4140625,
+        "exact_target_retention": 0.203125,
+        "seed": 4505
+      },
+      {
+        "capacity": 64,
+        "accuracy": 0.59375,
+        "exact_target_retention": 1.0,
+        "seed": 4505
+      }
+    ],
+    "code_sha256": "11556f72ae52ac8b42538de2ddd3868d94a50cc69df32b909427969db04dcb22",
+    "protocol": {
+      "base_config": "configs/level_a.json",
+      "capacities": [
+        4,
+        8,
+        12,
+        16,
+        24,
+        32,
+        64
+      ],
+      "reader_conditions": [
+        "oracle_current",
+        "oracle_stable"
+      ],
+      "seeds": [
+        505,
+        1505,
+        2505,
+        3505,
+        4505
+      ],
+      "steps": 300,
+      "batch_size": 32,
+      "train_chunks": [
+        2,
+        4,
+        8
+      ],
+      "evaluation_chunks": [
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "evaluation_samples": 128,
+      "learning_rate": 0.0005,
+      "contrastive_weight": 0.2,
+      "reference_capacity": 12
+    },
+    "code": "D:\\code\\InformationSpiralTransformer\\ist_v0_5\\run_v0_5_1.py",
+    "oracle_32": [
+      {
+        "condition": "oracle_current",
+        "chunks": 32,
+        "mean_accuracy": 0.796875,
+        "std_accuracy": 0.04588804736121379,
+        "seeds": 5
+      },
+      {
+        "condition": "oracle_stable",
+        "chunks": 32,
+        "mean_accuracy": 0.9,
+        "std_accuracy": 0.03921843874378479,
+        "seeds": 5
+      }
+    ],
+    "result_sha256": "09ef384e971f149687baffe89b723c40c1e6a5d0ba307efae54384b9588b58df",
+    "runs": 10,
+    "results": "D:\\code\\InformationSpiralTransformer\\ist_v0_5\\results\\v0_5_1\\results.json",
+    "split_audit": {
+      "binding_overlap": 0,
+      "train_binding_count": 206,
+      "heldout_binding_count": 50,
+      "shared_entity_vocabulary": true,
+      "shared_value_vocabulary": true,
+      "label_is_resampled_per_example": true,
+      "query_visible_during_history_write": false,
+      "passed": true
+    }
+  }
+}
